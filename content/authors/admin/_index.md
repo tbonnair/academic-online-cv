@@ -2,9 +2,9 @@
 role: Postdoctoral researcher
 bio: ""
 interests:
-  - Algorithmics
-  - Interface physics/machine learning
-  - Cosmology
+  - Interfaces physics/machine learning
+  - Algorithmics & Machine Learning
+  - "Cosmology: Large-scale structures of the Universe"
 social:
   - icon: envelope
     icon_pack: fas
@@ -23,7 +23,7 @@ organizations:
     url: https://www.ens.psl.eu/
 education:
   courses:
-    - course: PhD in Cosmology
+    - course: Ph.D. in Cosmology
       institution: Université Paris-Saclay
       year: 2021
     - course: Engineering school
