@@ -25,19 +25,19 @@ experience:
   - title: Ph.D. Student
     company: Institut d'Astrophysique Spatiale, Université Paris-Saclay
     company_url: ''
-    company_logo: ''
+    company_logo: org-x
     location: Orsay, France
-    date_start: '2017'
-    date_end: '2021'
+    date_start: '2017-09-01'
+    date_end: '2021-09-01'
     description: Cosmic web environments: identification, characterisation and quantification of cosmological information.
         
   - title: Research Engineer
     company: Thales
     company_url: ''
-    company_logo: ''
+    company_logo: org-x
     location: Elancourt, France
-    date_start: '2016'
-    date_end: '2017'
+    date_start: '2016-09-01'
+    date_end: '2017-09-01'
     description: Conception and development of an unsupervised algorithm to deinterleave radar pulses.
 
 design:
