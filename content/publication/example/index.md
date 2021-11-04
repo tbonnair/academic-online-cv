@@ -36,7 +36,8 @@ title: " Regularization of Mixture Models for Robust Principal Graph Learning"
 tags: []
 projects: []
 image:
-  caption: ""
+  caption: Comparison of several algorithms to identify a principal graph in
+    point-cloud datasets.
   focal_point: ""
   preview_only: false
   filename: featured.png
