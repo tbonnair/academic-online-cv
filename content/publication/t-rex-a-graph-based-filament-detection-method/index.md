@@ -22,6 +22,8 @@ authors:
   - Nabila Aghanim
   - Aurélien Decelle
   - Marian Douspis
+publication: In Astronomy and Astrophysics
+publication_short: In Astron. Astrophys.
 featured: true
 image:
   preview_only: false
