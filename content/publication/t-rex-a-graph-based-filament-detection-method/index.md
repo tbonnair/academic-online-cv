@@ -2,7 +2,8 @@
 title: "T-ReX: a graph-based filament detection method"
 subtitle: T-ReX
 publication_types:
-  - "0"
+  - "2"
+url_pdf:"https://arxiv.org/abs/1912.00732"
 authors:
   - admin
   - Nabila Aghanim
@@ -23,7 +24,7 @@ abstract: >-
 
   In this work, we propose a new approach for the automatic retrieval of the underlying filamentary structure from a 2D or 3D galaxy distribution using graph theory and the assumption that paths that link galaxies together with the minimum total length highlight the underlying distribution. To obtain a smoothed version of this topological prior, we embedded it in a Gaussian mixtures framework. In addition to a geometrical description of the pattern, a bootstrap-like estimate of these regularised minimum spanning trees allowed us to obtain a map characterising the frequency at which an area of the domain is crossed. Using the distribution of halos derived from numerical simulations, we show that the proposed method is able to recover the filamentary pattern in a 2D or 3D distribution of points with noise and outliers robustness with a few comprehensible parameters. 
 draft: false
-featured: false
+featured: true
 image:
   filename: featured
   focal_point: Smart
