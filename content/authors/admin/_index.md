@@ -1,7 +1,6 @@
 ---
 role: Postdoctoral researcher
-bio: My research interests include distributed robotics, mobile computing and
-  programmable matter.
+bio: ""
 interests:
   - Algorithmics
   - Interface physics/machine learning
@@ -10,20 +9,17 @@ social:
   - icon: envelope
     icon_pack: fas
     link: /#contact
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
   - icon: graduation-cap
     icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://scholar.google.com/citations?user=P1OBcHEAAAAJ&hl=fr
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/tbonnair
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/tbonnair
 organizations:
-  - name: École normale supérieure de Paris
+  - name: École Normale Supérieure de Paris
     url: https://www.ens.psl.eu/
 education:
   courses:
@@ -32,15 +28,13 @@ education:
       year: 2021
     - course: Engineering school
       institution: CentraleSupélec
-      year: 2016
+      year: 2017
 superuser: true
 highlight_name: true
 title: Nelson Bighetti
 email: ""
 ---
-
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I graduated from the french CentraleSupélec with a major background in applied mathematics and algorithmics. After a year of working as a research engineer in Thales, I decided to begin a Ph.D. program in Université Paris Saclay, at the Institut d'Astrophysique Spatiale under the supervision of Nabila Aghanim and Aurélien Decelle.
+I'm currently a postdoctoral researcher at the École Normale Supérieure (ENS) in Paris working on the interface between statistical physics and machine learning algorithms in Giulio Biroli's team at the center of data science in ENS.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
