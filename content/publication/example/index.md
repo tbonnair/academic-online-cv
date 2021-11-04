@@ -14,14 +14,17 @@ abstract: A regularized version of Mixture Models is proposed to learn a
   sub-samplings of the dataset to take into account cycles that can be observed
   in the spatial distribution.
 slides: ""
-url_pdf: "https://arxiv.org/abs/2106.09035"
+url_pdf: https://arxiv.org/abs/2106.09035
 publication_types:
   - "2"
 authors:
   - admin
   - Aurélien Decelle
   - Nabila Aghanim
-summary: ""
+summary: The extraction of patterns from spatially structured point-cloud
+  datasets is ubiquitous in many fields of science. In this work, we address the
+  case of extracting one-dimensional structure from such data by formulating the
+  problems in terms of a regularised version of a mixture model.
 url_dataset: ""
 url_project: ""
 author_notes: []
