@@ -2,6 +2,7 @@
 title: Cascade of Phase Transitions for Multi-Scale Clustering
 publication_types:
   - "2"
+pdf_url: "https://arxiv.org/abs/2010.07955"
 authors:
   - admin
   - Aurélien Decelle
