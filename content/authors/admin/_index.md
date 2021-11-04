@@ -15,7 +15,7 @@ social:
   - display:
       header: false
     link: https://ui.adsabs.harvard.edu/search/q=author%3A%22Bonnaire%2C%20T%22&sort=date%20desc%2C%20bibcode%20desc&p_=0
-    icon_pack: fab
+    icon_pack: ai
     icon: ads
   - icon: github
     icon_pack: fab
