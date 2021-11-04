@@ -1,14 +1,4 @@
 ---
-title: Cascade of Phase Transitions for Multi-Scale Clustering
-publication_types:
-  - "2"
-url_pdf: https://arxiv.org/abs/2010.07955
-authors:
-  - admin
-  - Aurélien Decelle
-  - Nabila Aghanim
-publication: In Physical Review D
-publication_short: In Phys. Rev. D
 abstract: "We present a novel framework exploiting the cascade of phase
   transitions occurring during a simulated annealing of the
   Expectation-Maximisation algorithm to cluster datasets with multi-scale
@@ -21,6 +11,16 @@ abstract: "We present a novel framework exploiting the cascade of phase
   mixture models to learn a principal graph from spatially structured datasets
   that can also exhibit many scales. "
 draft: false
+url_pdf: https://arxiv.org/abs/2010.07955
+title: Cascade of Phase Transitions for Multi-Scale Clustering
+publication_types:
+  - "2"
+authors:
+  - admin
+  - Aurélien Decelle
+  - Nabila Aghanim
+publication: In Physical Review D
+publication_short: ""
 featured: true
 image:
   filename: featured.png
