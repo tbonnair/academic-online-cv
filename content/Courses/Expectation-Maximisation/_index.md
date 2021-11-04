@@ -1,8 +1,8 @@
 ---
-title: 📊 Learn Data Science
-linkTitle: Data Science
-summary: An example of using Wowchemy's Book layout for publishing online courses.
-date: '2021-01-24'
+title: Expectation-Maximisation
+linkTitle: Expectation-Maximisation
+summary: An overview of how the EM algorithm works with some practical implementation on the Gaussian Mixture Model.
+date: '2021-11-04'
 type: book
 ---
 
