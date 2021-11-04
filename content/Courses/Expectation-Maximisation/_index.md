@@ -8,6 +8,10 @@ type: book
 
 ## Context
 
-## Program
+#{{< list_children >}}
 
-{{< list_children >}}
+## Mixture models
+
+## EM and its drawbacks
+
+## Practical implementation: a Python tutorial
