@@ -12,17 +12,17 @@ social:
   - icon: graduation-cap
     icon_pack: fas
     link: https://scholar.google.com/citations?user=P1OBcHEAAAAJ&hl=fr
+  - display:
+      header: false
+    link: https://ui.adsabs.harvard.edu/search/q=author%3A%22Bonnaire%2C%20T%22&sort=date%20desc%2C%20bibcode%20desc&p_=0
+    icon_pack: fab
+    icon: ads
   - icon: github
     icon_pack: fab
     link: https://github.com/tbonnair
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/tbonnair
-  - display:
-      header: false
-    link: https://ui.adsabs.harvard.edu/search/q=author%3A%22Bonnaire%2C%20T%22&sort=date%20desc%2C%20bibcode%20desc&p_=0
-    icon_pack: fab
-    icon: ads
 organizations:
   - name: École Normale Supérieure de Paris
     url: https://www.ens.psl.eu/
