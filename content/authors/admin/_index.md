@@ -28,7 +28,7 @@ organizations:
     url: https://www.ens.psl.eu/
 education:
   courses:
-    - course: Ph.D. in Cosmology
+    - course: Ph.D. in Astrophysics & Cosmology
       institution: Université Paris-Saclay
       year: 2021
     - course: Engineering school
