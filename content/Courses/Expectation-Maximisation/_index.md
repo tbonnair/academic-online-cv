@@ -8,8 +8,6 @@ type: book
 
 ## Context
 
-# {{< list_children >}}
-
 ## Mixture models
 
 ## EM and its drawbacks
