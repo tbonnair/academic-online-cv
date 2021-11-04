@@ -23,7 +23,7 @@ authors:
   - Aurélien Decelle
   - Marian Douspis
 publication: In Astronomy and Astrophysics
-publication_short: In Astron. Astrophys.
+publication_short: ""
 featured: false
 image:
   preview_only: false
