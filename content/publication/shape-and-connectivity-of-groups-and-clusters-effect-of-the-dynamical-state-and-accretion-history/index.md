@@ -34,7 +34,7 @@ authors:
   - admin
   - Nabila Aghanim
 publication: In Astronomy and Astrophysics
-publication_short: In Astron. Astrophys.
+publication_short: ""
 featured: false
 image:
   filename: featured.png
