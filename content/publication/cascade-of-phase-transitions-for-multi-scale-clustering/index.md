@@ -25,6 +25,9 @@ image:
   filename: featured.png
   focal_point: Smart
   preview_only: false
+  caption: Evolution of Gaussian components during the annealing (upper panel) and
+    two-dimensional diagram showing the successive phase transitions (lower
+    panel).
 summary: The task of clustering point-cloud data is nowadays believed to be
   either easy to carry or uninformative because the lack of knowledge (number of
   clusters, sizes, etc.) on the underlying pattern. This work proposes to use a
