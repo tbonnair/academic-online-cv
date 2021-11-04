@@ -39,7 +39,7 @@ abstract: The late-time matter distribution depicts a complex pattern commonly
   significantly improve the constraints on cosmological parameters obtained by
   standard analyses.
 slides: ""
-url_pdf: https://arxiv.org/abs/2106.09035
+url_pdf: https://tel.archives-ouvertes.fr/tel-03389995
 publication_types:
   - "7"
 authors:
