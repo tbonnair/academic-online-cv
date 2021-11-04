@@ -14,7 +14,7 @@ abstract: A regularized version of Mixture Models is proposed to learn a
   sub-samplings of the dataset to take into account cycles that can be observed
   in the spatial distribution.
 slides: ""
-url_pdf: ""
+url_pdf: "https://arxiv.org/abs/2106.09035"
 publication_types:
   - "2"
 authors:
@@ -30,7 +30,7 @@ url_source: ""
 url_video: ""
 publication: In IEEE Transactions on Pattern Analysis and Machine Intelligence
 featured: true
-date: 2021-11-04T15:48:10.892Z
+date: 2021-11-01
 url_slides: ""
 title: " Regularization of Mixture Models for Robust Principal Graph Learning"
 tags: []
