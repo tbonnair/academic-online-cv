@@ -23,18 +23,13 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Ph.D. Student
-    company: Université-Paris-Saclay,
+    company: IAS, Université-Paris-Saclay,
     company_url: ''
-    company_logo: org-gc
+    company_logo: ''
     location: California
-    date_start: '2021-01-01'
-    date_end: ''
-    description: |2-
-        Responsibilities include:
-        
-        * Analysing
-        * Modelling
-        * Deploying
+    date_start: '2021-09-01'
+    date_end: '2017-09-01'
+    description: Cosmic web environments: identification, characterisation and quantification of cosmological information.
         
   - title: Professor of Semiconductor Physics
     company: University X
