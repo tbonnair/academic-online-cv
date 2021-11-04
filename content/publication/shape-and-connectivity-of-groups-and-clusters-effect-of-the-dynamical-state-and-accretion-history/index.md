@@ -24,7 +24,7 @@ abstract: "Matter distribution around clusters is highly anisotropic because
   clusters are in their formation phase and must be strongly affected by the
   infalling of materials from filaments."
 draft: false
-url_pdf: https://arxiv.org/abs/2010.07955
+url_pdf: https://arxiv.org/abs/2101.04686
 title: "Shape and connectivity of groups and clusters: Effect of the dynamical
   state and accretion history "
 publication_types:
