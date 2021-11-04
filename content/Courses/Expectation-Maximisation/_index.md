@@ -8,7 +8,7 @@ type: book
 
 ## Context
 
-#{{< list_children >}}
+# {{< list_children >}}
 
 ## Mixture models
 
