@@ -2,7 +2,6 @@
 title: Cascade of Phase Transitions for Multi-Scale Clustering
 publication_types:
   - "2"
-url_pdf: https://arxiv.org/abs/2010.07955
 authors:
   - admin
   - Aurélien Decelle
@@ -23,7 +22,7 @@ abstract: "We present a novel framework exploiting the cascade of phase
 draft: false
 featured: true
 image:
-  filename: featured
+  filename: featured.png
   focal_point: Smart
   preview_only: false
 summary: The task of clustering point-cloud data is nowadays believed to be
