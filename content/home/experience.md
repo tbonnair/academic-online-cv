@@ -23,19 +23,28 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Ph.D. Student
-    company: IAS, Université-Paris-Saclay,
+    company: ENS, Université PSL,
     company_url: ''
     company_logo: ''
-    location: California
-    date_start: '2021-09-01'
-    date_end: '2017-09-01'
+    location: Paris, France
+    date_start: '2021-11-01'
+    date_end: ''
+    description: 'Interface between statistical physics and machine learning.'
+    
+  - title: Ph.D. Student
+    company: IAS, Université Paris-Saclay,
+    company_url: ''
+    company_logo: ''
+    location: Orsay, France
+    date_start: '2017-09-01'
+    date_end: '2021-11-01'
     description: 'Cosmic web environments: identification, characterisation and quantification of cosmological information.'
         
-  - title: Professor of Semiconductor Physics
-    company: University X
+  - title: Research Engineer
+    company: Thales
     company_url: ''
-    company_logo: org-x
-    location: California
+    company_logo: ''
+    location: Élancourt, France
     date_start: '2016-09-01'
     date_end: '2017-09-01'
     description: Conception and development of an unsupervised algorithm to deinterleave radar pulses emitted by satellites.
