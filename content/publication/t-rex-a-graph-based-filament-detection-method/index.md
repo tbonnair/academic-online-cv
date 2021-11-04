@@ -1,13 +1,4 @@
 ---
-title: "T-ReX: a graph-based filament detection method"
-publication_types:
-  - "2"
-authors:
-  - admin
-  - Nabila Aghanim
-  - Aurélien Decelle
-  - Marian Douspis
-url_pdf: https://arxiv.org/abs/1912.00732
 abstract: >-
   Numerical simulations and observations show that galaxies are not uniformly
   distributed in the universe but, rather, they are spread across a filamentary
@@ -22,7 +13,22 @@ abstract: >-
   and their evolution.
 
   In this work, we propose a new approach for the automatic retrieval of the underlying filamentary structure from a 2D or 3D galaxy distribution using graph theory and the assumption that paths that link galaxies together with the minimum total length highlight the underlying distribution. To obtain a smoothed version of this topological prior, we embedded it in a Gaussian mixtures framework. In addition to a geometrical description of the pattern, a bootstrap-like estimate of these regularised minimum spanning trees allowed us to obtain a map characterising the frequency at which an area of the domain is crossed. Using the distribution of halos derived from numerical simulations, we show that the proposed method is able to recover the filamentary pattern in a 2D or 3D distribution of points with noise and outliers robustness with a few comprehensible parameters. 
+url_pdf: https://arxiv.org/abs/1912.00732
+title: "T-ReX: a graph-based filament detection method"
+publication_types:
+  - "2"
+authors:
+  - admin
+  - Nabila Aghanim
+  - Aurélien Decelle
+  - Marian Douspis
 featured: true
-publishDate: 2017-01-01T00:00:00.000Z
+image:
+  preview_only: false
+summary: How to extract filaments based on a sparse and discrete spatial
+  distribution of matter tracers? This paper proposes an algorithm for doing so
+  by relying on a regularised graph to obtain a smooth one-dimensional structure
+  representing the filamentary pattern of the cosmic web.
 date: 2019-12-01T00:00:00.000Z
+publishDate: 2017-01-01T00:00:00.000Z
 ---
