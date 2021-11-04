@@ -32,6 +32,6 @@ summary: The task of clustering point-cloud data is nowadays believed to be
   Gaussian Mixture Model to alleviate some of the drawbacks of the clustering
   task. In particular, it shows that we can explore the dataset to obtain
   several key information on the number of clusters, their size and how they are
-  embedded in space, even in high-dimensions.
+  embedded in space, even in high dimensions.
 date: 2020-10-15T19:59:55.824Z
 ---
