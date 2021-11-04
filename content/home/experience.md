@@ -29,7 +29,7 @@ experience:
     location: California
     date_start: '2021-09-01'
     date_end: '2017-09-01'
-    description: Cosmic web environments: identification, characterisation and quantification of cosmological information.
+    description: 'Cosmic web environments: identification, characterisation and quantification of cosmological information.'
         
   - title: Professor of Semiconductor Physics
     company: University X
