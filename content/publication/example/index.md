@@ -28,7 +28,7 @@ summary: The extraction of patterns from spatially structured point-cloud
 url_dataset: ""
 url_project: ""
 author_notes: []
-publication_short: In IEEE-tpami
+publication_short: ""
 url_source: ""
 url_video: ""
 publication: In IEEE Transactions on Pattern Analysis and Machine Intelligence
@@ -41,7 +41,7 @@ projects: []
 image:
   caption: Comparison of several algorithms to identify a principal graph in
     point-cloud datasets.
-  focal_point: ""
+  focal_point: Smart
   preview_only: false
   filename: featured.png
 publishDate: 2017-01-01T00:00:00.000Z
