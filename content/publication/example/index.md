@@ -14,7 +14,7 @@ abstract: A regularized version of Mixture Models is proposed to learn a
   sub-samplings of the dataset to take into account cycles that can be observed
   in the spatial distribution.
 slides: ""
-url_pdf: ""
+url_pdf: "https://arxiv.org/abs/2106.09035"
 publication_types:
   - "2"
 authors:
