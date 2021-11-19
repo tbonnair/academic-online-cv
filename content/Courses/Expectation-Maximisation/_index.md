@@ -151,3 +151,9 @@ $$
 for the amplitudes, centre positions and covariance matrices respectively.
 
 ## Practical implementation: a Python tutorial
+
+```python
+import pandas as pd
+data = pd.read_csv("data.csv")
+data.head()
+```
