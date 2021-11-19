@@ -124,6 +124,29 @@ $$
 The left term in the numerator is the probability of observing $\boldsymbol{x}_i$ knowing that it belongs to the cluster $k$ and the parameters of the model. The right one is the probability of $\boldsymbol{x}_i $ being in the cluster $k$ given parameters of the model. Finally, the denominator is the probability of observing $\boldsymbol{x}_i $ given parameters of the model and independantly of any belonging to Gaussian clusters.
 {style="color: red"}
 {{< /spoiler >}}
-    
-    
+
+  This estimation of $p_{ik}$ is then used in the M-step to evaluate the maximum of the lower-bound
+$$
+  L(q, \boldsymbol{\Theta}) = \sum_{i=1}^N \sum_{k=1}^K p_{ik} \log \left[ \pi_k \mathcal{N}(\boldsymbol{x}_i, \boldsymbol{\theta}_k) \right] + \mathrm{cst}.
+$$
+Parameters of the model can be obtained by maximising this quantity over $\boldsymbol{\Theta}$. In the case of a GMM, the M-step consists then in solving
+$$
+  \operatorname*{argmax}_{\boldsymbol{\Theta}} \sum_{i=1}^N \sum_{k=1}^K p_{ik} \left[ \log \pi_k - \frac{1}{2} \log \boldsymbol{\Sigma}_k - \frac{1}{2} \left(\boldsymbol{x}_i - \boldsymbol{\mu}_k \right)\tran \boldsymbol{\Sigma}_k \left(\boldsymbol{x}_i - \boldsymbol{\mu}_k \right) \right],
+$$
+
+{{< callout note >}}
+This equation is very similar to the one from the very first equation of the lesson, the one optimised by the K-means algorithm! However, in the K-means one, a datapoint is associated to a unique cluster while the GMM method not only includes a parameter for the shape of the cluster through the variances $\bm{\Sigma}_k$ but also quantifies the probability of a datapoint $\boldsymbol{x}_i$ to be represented by a given cluster $k$ through the responsibility $p_{ik}$.
+{{< /callout >}}
+
+It is hence possible to derive an update equation for each parameter of $\boldsymbol{\Theta}^{(t+1)}$ as
+$$
+\begin{array}{l}
+    \pi_k^{(t+1)} = \displaystyle \frac{1}{N} \sum_{i=1}^N p_{ik}, \\
+
+    \displaystyle \boldsymbol{\mu}_k^{(t+1)} = \frac{\sum_{i=1}^N \boldsymbol{x}_i \, p_{ik}}{\sum_{i=1}^N p_{ik}}, \\
+
+    \boldsymbol{\Sigma}_k^{(t+1)} = \displaystyle \frac{\sum_{i=1}^N p_{ik} (\boldsymbol{x}_i - \boldsymbol{\mu}_k) (\boldsymbol{x}_i - \boldsymbol{\mu}_k)^\mathrm{T}}{\sum_{i=1}^N p_{ik}}.
+\end{array}
+$$    
+
 ## Practical implementation: a Python tutorial
