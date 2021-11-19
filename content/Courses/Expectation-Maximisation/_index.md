@@ -61,7 +61,7 @@ The latent variables $\boldsymbol{Z}$ can simply be seen as the answer we are lo
 $$
   \log p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) = \sum_{i=1}^N \log \left(\pi_{z_i} \, f(\boldsymbol{x}_i, \boldsymbol{\theta}_{z_i}) \right).
 $$
-This new log-likelihood $ \log p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) $ is often referred to as the "completed log-likelihood" of the model in the sense that the joint knowledge of datapoints $\boldsymbol{X}$ and latent variables $\boldsymbol{Z}$ is the "completed dataset". The idea behind EM is that the log-likelihood of $\{\boldsymbol{X}, \boldsymbol{Z}\}$ is easier to maximise than the one of our initial model. Simply said: if we knew the vector $\boldsymbol{Z}$, we could easily maximise the completed likelihood and find parameters $\boldsymbol{\Theta}$ of the model by simple derivations.
+This new log-likelihood $ \log p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) $ is often referred to as the "completed log-likelihood" of the model in the sense that the joint knowledge of datapoints $\boldsymbol{X}$ and latent variables $\boldsymbol{Z}$ is the "completed dataset". The idea behind EM is that the log-likelihood of $\lbrace \boldsymbol{X}, \boldsymbol{Z} \rbrace $ is easier to maximise than the one of our initial model. Simply said: if we knew the vector $\boldsymbol{Z}$, we could easily maximise the completed likelihood and find parameters $\boldsymbol{\Theta}$ of the model by simple derivations.
 Unfortunately, $\boldsymbol{Z}$ is not know! These are why we call them "latent", "hidden" or sometimes "unobserved" variables. We hence need to estimate them, in addition to $\boldsymbol{\Theta}$.
 
 {{< callout note >}}
