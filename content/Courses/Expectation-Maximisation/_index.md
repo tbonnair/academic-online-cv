@@ -56,14 +56,18 @@ $$
 $$
 Unfortunately, this log-likelihood is not analytically tractable because of the summation appearing inside the log function!
 
-One clever way to circumvent this was proposed by Dempster in 1977 and it is called the Expectation-Maximisation. It first reformulate the mixture model in terms of _latent variables_, by simply introducing a set of random variables $\boldsymbol{Z} = \lbrace z_i \rbrace_{i=1}^N $ with $ z_i \in \lbrace 1, \ldots, K \rbrace$. In fact, $\bm{Z}$ simply represents the partition of the dataset and $z_i$ denotes by which of the $K$ component the datapoint $\boldsymbol{x}_i$ has been generated from.
-    
+One clever way to circumvent this was proposed by Dempster in 1977 and it is called the Expectation-Maximisation. It first reformulates the mixture model in terms of _latent variables_, by simply introducing a set of random variables $\boldsymbol{Z} = \lbrace z_i \rbrace_{i=1}^N $ with $ z_i \in \lbrace 1, \ldots, K \rbrace$. In fact, $\bm{Z}$ represents the partition of the dataset and $z_i$ denotes by which of the $K$ component the datapoint $\boldsymbol{x}_i$ has been generated from.
+The latent variables $\boldsymbol{Z}$ can simply be seen as the answer we are looking for in the clustering problem! Now imagine that we have access to them, we can write the new log-likelihood,
+$$
+  \log p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) = \sum_{i=1}^N \log \left(\pi_{z_i} \, f(\boldsymbol{x}_i, \boldsymbol{\theta}_{z_i}) \right).
+$$
 
 {{< callout note >}}
-The parameter $\mu$ is the mean or expectation of the distribution.
-$\sigma$ is its standard deviation.
-The variance of the distribution is $\sigma^{2}$.
+This new log-likelihood $ \log p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) $ is often referred to as the "completed log-likelihood" of the model in the sense that the joint knowledge of datapoints $\boldsymbol{X}$ and latent variables $\boldsymbol{Z}\}$ is the "completed dataset".
 {{< /callout >}}
+    
+
+
 
 {{< spoiler text="What is the parameter $\mu$?" >}}
 The parameter $\mu$ is the mean or expectation of the distribution.
