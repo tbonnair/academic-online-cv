@@ -40,7 +40,7 @@ $$
 
   This idea of combination of known laws, despite its conceptual simplicity, can lead to accurate representations of highly complex density distributions! This is in particular why mixture distributions are nowadays at the basis of many mathematical tools used in machine learning like kernel density estimation, clustering or mixture density networks.
 
-  A particular class of mixture model is the Gaussian case, where $\forall k \in \lbrace 1, \ldots, K \rbrace, f_k(\boldsymbol{x}, \boldsymbol{\theta}_k) = \mathcal{N}(\bm{x}, \bm{\theta}_k)$, with
+  A particular class of mixture model is the Gaussian case, where $\forall k \in \lbrace 1, \ldots, K \rbrace, f_k(\boldsymbol{x}, \boldsymbol{\theta}_k) = \mathcal{N}(\boldsymbol{x}, \boldsymbol{\theta}_k)$, with
 $$
 \mathcal{N}(\boldsymbol{x}, \boldsymbol{\theta}_k) = \frac{\exp{ -\frac{1}{2} \left(\boldsymbol{x} - \boldsymbol{\mu}_k\right)^\mathrm{T} \boldsymbol{\Sigma}_k^{-1} \left(\boldsymbol{x} - \boldsymbol{\mu}_k\right)}}{(2\pi)^{D/2} \lvert \boldsymbol{\Sigma}_k \rvert^{1/2}},
 $$
