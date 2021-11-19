@@ -56,17 +56,15 @@ $$
 $$
 Unfortunately, this log-likelihood is not analytically tractable because of the summation appearing inside the log function!
 
-One clever way to circumvent this was proposed by Dempster in 1977 and it is called the Expectation-Maximisation. It first reformulates the mixture model in terms of _latent variables_, by simply introducing a set of random variables $\boldsymbol{Z} = \lbrace z_i \rbrace_{i=1}^N $ with $ z_i \in \lbrace 1, \ldots, K \rbrace$. In fact, $\bm{Z}$ represents the partition of the dataset and $z_i$ denotes by which of the $K$ component the datapoint $\boldsymbol{x}_i$ has been generated from.
+One clever way to circumvent this was proposed by Dempster in 1977 and it is called the Expectation-Maximisation. It first reformulates the mixture model in terms of _latent variables_, by simply introducing a set of random variables $\boldsymbol{Z} = \lbrace z_i \rbrace_{i=1}^N $ with $ z_i \in \lbrace 1, \ldots, K \rbrace$. In fact, $\boldsymbol{Z}$ represents the partition of the dataset and $z_i$ denotes by which of the $K$ component the datapoint $\boldsymbol{x}_i$ has been generated from.
 The latent variables $\boldsymbol{Z}$ can simply be seen as the answer we are looking for in the clustering problem! Now imagine that we have access to them, we can write the new log-likelihood,
 $$
   \log p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) = \sum_{i=1}^N \log \left(\pi_{z_i} \, f(\boldsymbol{x}_i, \boldsymbol{\theta}_{z_i}) \right).
 $$
-This new log-likelihood $ \log p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) $ is often referred to as the "completed log-likelihood" of the model in the sense that the joint knowledge of datapoints $\boldsymbol{X}$ and latent variables $\boldsymbol{Z}$ is the "completed dataset".
+This new log-likelihood $ \log p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) $ is often referred to as the "completed log-likelihood" of the model in the sense that the joint knowledge of datapoints $\boldsymbol{X}$ and latent variables $\boldsymbol{Z}$ is the "completed dataset". The idea behind EM is that the log-likelihood of $\{\boldsymbol{X}, \boldsymbol{Z}\}$ is easier to maximise than the one of our initial model. Simply said: if we knew the vector $\boldsymbol{Z}$, we could easily maximise the completed likelihood and find parameters $\boldsymbol{\Theta}$ of the model by simple derivations.
+Unfortunately, $\boldsymbol{Z}$ is not know! These are why we call them "latent", "hidden" or sometimes "unobserved" variables. We hence need to estimate them, in addition to $\boldsymbol{\Theta}$.
 
 {{< callout note >}}
-The key idea of EM is that the log-likelihood of $\{\bm{X}, \bm{Z}\}$ is easier to maximise than the one of our initial model. Simply said: if we knew the vector $\bm{Z}$, we could easily maximise the completed likelihood and find parameters $\bm{\Theta}$ of the model by simple derivations.
-Unfortunately, $\bm{Z}$ is not know! These are why we call them "latent", "hidden" or sometimes "unobserved" variables. We hence need to estimate them, in addition to $\bm{\Theta}$.
-
 It might seem strange that I'm stating that the task is now easier since we now need to estimate two quantities: $\boldsymbol{\Theta}$ AND $\boldsymbol{Z}$ instead of just $\boldsymbol{\Theta}$ in the first place... But it is! When knowing $\boldsymbol{\Theta}$, estimate $\boldsymbol{Z}$ is easy, and when knowning this latter, estimating $\boldsymbol{\Theta}$ is easy! This is the idea of EM which provides a procedure with two alternating steps to iteratively estimate both quantities.
 {{< /callout >}}
 
