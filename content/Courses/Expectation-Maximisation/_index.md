@@ -72,14 +72,19 @@ EM hence provides a procedure with two alternating steps to iteratively estimate
 $$
   L(q, \boldsymbol{\Theta}) = - D_\mathrm{KL}(q, p(\boldsymbol{Z} | \boldsymbol{X}, \boldsymbol{\Theta})) + \log p(\boldsymbol{X} | \boldsymbol{\Theta}),
 $$
-where $D_\mathrm{KL}(q, p) = \sum q \log q/p \geq 0$ is the Kullback-Leibler divergence.
+where $D_\mathrm{KL}(q, p) = \sum q \log q/p \geq 0$ is the Kullback-Leibler divergence and $L = \sum_{\boldsymbol{Z}} q(\boldsymbol{Z}) \log \left[ \frac{p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta})}{q(\boldsymbol{Z})} \right]$.
 
 {{< spoiler text="Want more information about the derivation of this equation?" >}}
-Using Jensen's inequality, stating that, for any random variable $X$ and convex function $f$, $f(\mathbb{E} \{X\}) \leq \mathbb{E}\{f(X)\}$ and the concavity of the logarithm function, we can write the log-likelihood, for any normalised distribution $q(\bm{Z})$ over the latent variables, as
+Using Jensen's inequality, stating that, for any random variable $X$ and convex function $f$, $f(\mathbb{E} \{X\}) \leq \mathbb{E}\{f(X)\}$ and the concavity of the logarithm function, we can write the log-likelihood, for any normalised distribution $q(\boldsymbol{Z})$ over the latent variables, as
 $$
-  \log p(\boldsymbol{X} | \boldsymbol{\Theta}) \geq L(q, \boldsymbol{\Theta}) = \sum_{\bm{Z}} q(\bm{Z}) \log \left[ \frac{p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta})}{q(\boldsymbol{Z})} \right].
+  \log p(\boldsymbol{X} | \boldsymbol{\Theta}) \geq L(q, \boldsymbol{\Theta}) = \sum_{\boldsymbol{Z}} q(\boldsymbol{Z}) \log \left[ \frac{p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta})}{q(\boldsymbol{Z})} \right].
 $$
-  Hence, the log-likelihood of the model is bounded below by $L(q, \boldsymbol{\Theta})$. If easier to handle, maximising this quantity could help maximising $\log p(\boldsymbol{X} | \boldsymbol{\Theta})$. We can re-write this lower-bound, using the normalisation of $q(\boldsymbol{Z})$ and the decomposition $p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) = p(\boldsymbol{Z} | \boldsymbol{X}, \boldsymbol{\Theta}) p(\boldsymbol{X} | \boldsymbol{\Theta})$, which leads to the expression given above.    
+  Hence, the log-likelihood of the model is bounded below by $L(q, \boldsymbol{\Theta})$. If easier to handle, maximising this quantity could help maximising $\log p(\boldsymbol{X} | \boldsymbol{\Theta})$. We can re-write this lower-bound, using the normalisation of $q(\boldsymbol{Z})$ and the decomposition $p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) = p(\boldsymbol{Z} | \boldsymbol{X}, \boldsymbol{\Theta}) p(\boldsymbol{X} | \boldsymbol{\Theta})$, which leads to the expression given above.
 {{< /spoiler >}}
+
+Because of the positivity of the Kullback-Leibler divergence, we see that $L(q, \boldsymbol{\Theta})$ is a lower-bound of the log-likelihood with $\log p(\boldsymbol{X} | \boldsymbol{\Theta}) \geq  L(q, \boldsymbol{\Theta})$. So, maxisiming the lower-bound $L$ should increase the log-likelihood. As a first step, we can estimate the distribution $q(\boldsymbol{Z}$ of the latent variable that maximises the lower-bound. This is easy since the log-likelihood is independant from $\boldsymbol{Z}$ and the $D_\mathrm{KL}$ is positive! So we use the current values of the parameters $\boldsymbol{\Theta}^{(t)}$ and set
+$$
+\hat{q}(\boldsymbol{Z}) = p(\boldsymbol{Z} | \boldsymbol{X}, \boldsymbol{\Theta}^{(t)}).
+$$
 
 ## Practical implementation: a Python tutorial
