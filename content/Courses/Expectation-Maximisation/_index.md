@@ -143,12 +143,10 @@ $$
 \pi_k^{(t+1)} = \displaystyle \frac{1}{N} \sum_{i=1}^N p_{ik},
 $$
 for the amplitudes,
-
 $$
 \boldsymbol{\mu}_k^{(t+1)} = \frac{\sum_{i=1}^N \boldsymbol{x}_i \, p_{ik}}{\sum_{i=1}^N p_{ik}},
 $$
 for the centre positions, and
-
 $$
 \boldsymbol{\Sigma}_k^{(t+1)} = \displaystyle \frac{\sum_{i=1}^N p_{ik} (\boldsymbol{x}_i - \boldsymbol{\mu}_k) (\boldsymbol{x}_i - \boldsymbol{\mu}_k)^\mathrm{T}}{\sum_{i=1}^N p_{ik}},
 $$
