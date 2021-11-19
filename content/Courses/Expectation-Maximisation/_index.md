@@ -98,7 +98,15 @@ $$
 This step is the **M-step**, standing for "Maximisation" because we need to maximise the lower-bound over the parameters of the model. 
 
 {{< callout note >}}
-The full EM algorithm, by alternating between E and M steps, iteratively maximises the log-likelihood of the model through the double maximisation of a lower-bound, first over the distribution of latent variables and then over the parameters of the model, $\boldsymbol{\Theta}$.
+The full EM algorithm, by alternating between E and M steps, iteratively maximises the log-likelihood of the model through the double maximisation of a lower-bound, first over the distribution of latent variables and then over the parameters of the model, $\boldsymbol{\Theta}$. As shown in the Figure below, starting from a random initialisation (either the grey or dark red point), we iteratively climb the log-likelihood by using a simpler function to maximise, the lower-bound $L(\boldsymbol{q}, \boldsymbol{\Theta})$.
 {{< /callout >}}
+
+<p align="center">
+<img src="https://github.com/tbonnair/academic-online-cv/blob/master/content/Courses/Expectation-Maximisation/EM_climbing.png?raw=true" alt="fig:EM"/>
+</p>
+
+## Application to Gaussian mixture models
+
+We have seen the theoretical context of the Expectation-Maximisation algorithm for general mixtures. How can we use it in practice if we model our dataset with the Gaussian Mixture Model (GMM)?
 
 ## Practical implementation: a Python tutorial
