@@ -77,9 +77,9 @@ where $D_\mathrm{KL}(q, p) = \sum q \log q/p \geq 0$ is the Kullback-Leibler div
 {{< spoiler text="Want more information about the derivation of this equation?" >}}
 Using Jensen's inequality, stating that, for any random variable $X$ and convex function $f$, $f(\mathbb{E} \{X\}) \leq \mathbb{E}\{f(X)\}$ and the concavity of the logarithm function, we can write the log-likelihood, for any normalised distribution $q(\bm{Z})$ over the latent variables, as
 $$
-  \log p(\boldsymbol{X} | \boldsymbol{\Theta}) \geq L(q, \bm{\Theta}) \coloneqq \sum_{\bm{Z}} q(\bm{Z}) \log \left[ \frac{p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta})}{q(\boldsymbol{Z})} \right].
+  \log p(\boldsymbol{X} | \boldsymbol{\Theta}) \geq L(q, \boldsymbol{\Theta}) = \sum_{\bm{Z}} q(\bm{Z}) \log \left[ \frac{p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta})}{q(\boldsymbol{Z})} \right].
 $$
-  Hence, the log-likelihood of the model is bounded below by $L(q, \bm{\Theta})$. If easier to handle, maximising this quantity could help maximising $\log p(\bm{X} \given \bm{\Theta})$. We can re-write this lower-bound, using the normalisation of $q(\bm{Z})$ and the decomposition $p(\bm{X}, \bm{Z} \given \bm{\Theta}) = p(\bm{Z} \given \bm{X}, \bm{\Theta}) p(\bm{X} \given \bm{\Theta})$, which leads to the expression given above.    
+  Hence, the log-likelihood of the model is bounded below by $L(q, \boldsymbol{\Theta})$. If easier to handle, maximising this quantity could help maximising $\log p(\boldsymbol{X} | \boldsymbol{\Theta})$. We can re-write this lower-bound, using the normalisation of $q(\boldsymbol{Z})$ and the decomposition $p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) = p(\boldsymbol{Z} | \boldsymbol{X}, \boldsymbol{\Theta}) p(\boldsymbol{X} | \boldsymbol{\Theta})$, which leads to the expression given above.    
 {{< /spoiler >}}
 
 ## Practical implementation: a Python tutorial
