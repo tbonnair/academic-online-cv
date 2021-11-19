@@ -140,13 +140,11 @@ This equation is very similar to the one from the very first equation of the les
 
 It is hence possible to derive an update equation for each parameter of $\boldsymbol{\Theta}^{(t+1)}$ as
 $$
-\begin{array}{l}
-    \pi_k^{(t+1)} = \displaystyle \frac{1}{N} \sum_{i=1}^N p_{ik}, \\
+\pi_k^{(t+1)} = \displaystyle \frac{1}{N} \sum_{i=1}^N p_{ik}, \\
 
-    \displaystyle \boldsymbol{\mu}_k^{(t+1)} = \frac{\sum_{i=1}^N \boldsymbol{x}_i \, p_{ik}}{\sum_{i=1}^N p_{ik}}, \\
+\displaystyle \boldsymbol{\mu}_k^{(t+1)} = \frac{\sum_{i=1}^N \boldsymbol{x}_i \, p_{ik}}{\sum_{i=1}^N p_{ik}}, \\
 
-    \boldsymbol{\Sigma}_k^{(t+1)} = \displaystyle \frac{\sum_{i=1}^N p_{ik} (\boldsymbol{x}_i - \boldsymbol{\mu}_k) (\boldsymbol{x}_i - \boldsymbol{\mu}_k)^\mathrm{T}}{\sum_{i=1}^N p_{ik}}.
-\end{array}
+\boldsymbol{\Sigma}_k^{(t+1)} = \displaystyle \frac{\sum_{i=1}^N p_{ik} (\boldsymbol{x}_i - \boldsymbol{\mu}_k) (\boldsymbol{x}_i - \boldsymbol{\mu}_k)^\mathrm{T}}{\sum_{i=1}^N p_{ik}}.
 $$    
 
 ## Practical implementation: a Python tutorial
