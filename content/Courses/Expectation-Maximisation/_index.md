@@ -131,11 +131,11 @@ $$
 $$
 Parameters of the model can be obtained by maximising this quantity over $\boldsymbol{\Theta}$. In the case of a GMM, the M-step consists then in solving
 $$
-  \operatorname*{argmax}_{\boldsymbol{\Theta}} \sum_{i=1}^N \sum_{k=1}^K p_{ik} \left[ \log \pi_k - \frac{1}{2} \log \boldsymbol{\Sigma}_k - \frac{1}{2} \left(\boldsymbol{x}_i - \boldsymbol{\mu}_k \right)\tran \boldsymbol{\Sigma}_k \left(\boldsymbol{x}_i - \boldsymbol{\mu}_k \right) \right],
+  \operatorname*{argmax}_{\boldsymbol{\Theta}} \sum_{i=1}^N \sum_{k=1}^K p_{ik} \left[ \log \pi_k - \frac{1}{2} \log \boldsymbol{\Sigma}_k - \frac{1}{2} \left(\boldsymbol{x}_i - \boldsymbol{\mu}_k \right)^\mathrm{T} \boldsymbol{\Sigma}_k \left(\boldsymbol{x}_i - \boldsymbol{\mu}_k \right) \right],
 $$
 
 {{< callout note >}}
-This equation is very similar to the one from the very first equation of the lesson, the one optimised by the K-means algorithm! However, in the K-means one, a datapoint is associated to a unique cluster while the GMM method not only includes a parameter for the shape of the cluster through the variances $\bm{\Sigma}_k$ but also quantifies the probability of a datapoint $\boldsymbol{x}_i$ to be represented by a given cluster $k$ through the responsibility $p_{ik}$.
+This equation is very similar to the one from the very first equation of the lesson, the one optimised by the K-means algorithm! However, in the K-means one, a datapoint is associated to a unique cluster while the GMM method not only includes a parameter for the shape of the cluster through the variances $ {\boldsymbol{\Sigma}_k} $ but also quantifies the probability of a datapoint $\boldsymbol{x}_i$ to be represented by a given cluster $k$ through the responsibility $p_{ik}$.
 {{< /callout >}}
 
 It is hence possible to derive an update equation for each parameter of $\boldsymbol{\Theta}^{(t+1)}$ as
