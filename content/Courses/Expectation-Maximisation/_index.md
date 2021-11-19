@@ -65,10 +65,14 @@ This new log-likelihood $ \log p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\T
 Unfortunately, $\boldsymbol{Z}$ is not know! These are why we call them "latent", "hidden" or sometimes "unobserved" variables. We hence need to estimate them, in addition to $\boldsymbol{\Theta}$.
 
 {{< callout note >}}
-It might seem strange that I'm stating that the task is now easier since we now need to estimate two quantities: $\boldsymbol{\Theta}$ AND $\boldsymbol{Z}$ instead of just $\boldsymbol{\Theta}$ in the first place... But it is! When knowing $\boldsymbol{\Theta}$, estimate $\boldsymbol{Z}$ is easy, and when knowning this latter, estimating $\boldsymbol{\Theta}$ is easy! This is the idea of EM which provides a procedure with two alternating steps to iteratively estimate both quantities.
+It might seem strange that I'm stating that the task is now easier since we now need to estimate two quantities: $\boldsymbol{\Theta}$ AND $\boldsymbol{Z}$ instead of just $\boldsymbol{\Theta}$ in the first place... But it is! When knowing $\boldsymbol{\Theta}$, estimate $\boldsymbol{Z}$ is easy, and when knowning this latter, estimating $\boldsymbol{\Theta}$ is easy! This is the key idea of the Expectation-Maximisation algorithm.
 {{< /callout >}}
 
-
+EM hence provides a procedure with two alternating steps to iteratively estimate both quantities. Let's dive into the mathematics of it. First, we can relate the two log-likelihood: the initial one $\log p(\boldsymbol{X} | \boldsymbol{\Theta})$ and the completed one $\log p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta})$. In fact, for any distribution over the latent variables $q(\boldsymbol{Z})$, we can derive the relation
+$$
+  L(q, \boldsymbol{\Theta}) = - D_\mathrm{KL}(q, p(\boldsymbol{Z} | \boldsymbol{X}, \boldsymbol{\Theta})) + \log p(\boldsymbol{X} | \boldsymbol{\Theta}),
+$$
+where $D_\mathrm{KL}(q, p) = \sum q \log q/p \geq 0$ is the Kullback-Leibler divergence.
 
 {{< spoiler text="What is the parameter $\mu$?" >}}
 The parameter $\mu$ is the mean or expectation of the distribution.
