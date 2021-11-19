@@ -102,7 +102,7 @@ The full EM algorithm, by alternating between E and M steps, iteratively maximis
 {{< /callout >}}
 
 <p align="center">
-<img src="https://github.com/tbonnair/academic-online-cv/blob/master/content/Courses/Expectation-Maximisation/EM_climbing.png?raw=true" alt="fig:EM" width="1000"/>
+<img src="https://github.com/tbonnair/academic-online-cv/blob/master/content/Courses/Expectation-Maximisation/EM_climbing.png?raw=true" alt="fig:EM" />
 </p>
 
 ## Application to Gaussian mixture models
