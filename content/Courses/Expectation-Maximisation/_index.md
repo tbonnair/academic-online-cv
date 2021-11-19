@@ -92,12 +92,12 @@ This step is called the **E-step** as a reference to "Expectation" because the l
 
 From these estimate of latent variables, we can now maximises the lower-bound, or equivalently the log-likelihood since the Kullback-Leibler now cancels out. We consequently need to compute 
 $$
-  \boldsymbol{\Theta}^{(t+1)} &= \operatorname*{argmax}_{\boldsymbol{\Theta}} L(\hat{q}, \boldsymbol{\Theta})
+  \boldsymbol{\Theta}^{(t+1)} = \operatorname*{argmax}_{\boldsymbol{\Theta}} L(\hat{q}, \boldsymbol{\Theta})
 $$
-This step is the **M-step**, standing for ``Maximisation''. 
+This step is the **M-step**, standing for "Maximisation" because we need to maximise the lower-bound over the parameters of the model. 
 
 {{< callout note >}}
-The full EM algorithm, by alternating between E and M steps, iteratively maximises the log-likelihood of the model through the double maximisation of a lower-bound, first over the distribution of latent variables and then over the parameters of the model, $\bm{\Theta}$.
+The full EM algorithm, by alternating between E and M steps, iteratively maximises the log-likelihood of the model through the double maximisation of a lower-bound, first over the distribution of latent variables and then over the parameters of the model, $\boldsymbol{\Theta}$.
 {{< /callout >}}
 
 ## Practical implementation: a Python tutorial
