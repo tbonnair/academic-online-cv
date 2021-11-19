@@ -10,8 +10,10 @@ math: true
 ## Context
 
   Clustering is a one of the most ancient unsupervised tasks of ML aiming at identifying a partition of a given dataset into multiple groups called "clusters". Figure \ref{fig:clustering} illustrates this objective in a 2D case where the aim is to go from the left panel to the right one, by attributing a class to each input datapoint. 
-  
+
+<p align="center">
 ![fig:clustering](clustering_illustration.png)
+</p>
   
   The common ground to many methods that have been proposed these past decades is that they all embed, in some ways, a measure of the "similarity" between datapoints living inside the same cluster. The simplest way of thinking this is a measure based on the Euclidean distance leading to representations in which "close" datapoints more likely fall into the same cluster while distant ones should reside in different clusters. The prototypical method to partition a $D$-dimensional dataset into $K$ clusters is the K-means algorithm proposed by Macqueen in 1967. We can write the K-means goal as the optimisation problem aiming at finding the set of $K$ points (hereafter called centres) minimising the sum of squared distances between datapoints and cluster centres. We end up in a setting seeking to find the set of points $\left( \boldsymbol{\mu}_1, \ldots, \boldsymbol{\mu}_K \right)$ minimising
 
