@@ -41,7 +41,7 @@ directions: Staircase B, 3rd floor
 main_menu:
   enable: true
   align: l
-  show_logo: true
+  show_logo: False
   show_language: false
   show_day_night: true
   show_search: true
