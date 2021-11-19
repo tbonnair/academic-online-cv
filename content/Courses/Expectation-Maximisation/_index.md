@@ -118,6 +118,7 @@ $$
 Bayes' theorem allows to express the probability of an event given some prior knowledge. In our context, we can write
 $$
 p(z_i = k | \boldsymbol{x}_i, \boldsymbol{\Theta}^{(t)}) = \frac{p( \boldsymbol{x}_i | z_i = k, \boldsymbol{\Theta}^{(t)} ) p(z_i = k | \boldsymbol{\Theta}^{(t)}) }{ p(\boldsymbol{x}_i | \boldsymbol{\Theta}^{(t)}) }.
+
 $$
 {style="color: red"}
 
