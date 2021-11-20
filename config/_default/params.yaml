@@ -36,7 +36,7 @@ coordinates:
   longitude: '2.3442717'
 directions: Staircase B, 3rd floor
 map:
-  provider: 'mapnik'
+  provider: 'google'
   api_key: ''
   zoom: 15
 
