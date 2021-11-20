@@ -30,14 +30,11 @@ url_video: ""
 date: 2021-10-27T10:00:00.000Z
 featured: false
 url_slides: ""
-address:
-  city: "Madrid"
-  country: "Spain"
 title: "The principal graph of the cosmic web: learning patterns in point cloud
   datasets"
-location: UCM theoretical physics
+location: ""
 links: []
-event: Seminar
+event: Seminar at UCM theoretical physics dept.
 publishDate: 2017-01-01T00:00:00Z
 tags: []
 projects: []
