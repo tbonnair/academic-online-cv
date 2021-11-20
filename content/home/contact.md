@@ -16,5 +16,5 @@ widget_id: contact
 design:
   columns: "2"
   background:
-    image: logo.png
+    image: ""
 ---
