@@ -22,7 +22,7 @@ abstract: The spatial distribution of galaxies in the Universe is not uniform
   together with the learning of the local width of the structure.
 slides: ""
 url_pdf: ""
-summary: An example talk using Wowchemy's Markdown slides feature.
+summary: ""
 date_end: 2021-10-27T11:00:00.000Z
 event_url: https://www.ucm.es/teorica/seminarios-de-fisica-teorica
 authors: []
@@ -31,11 +31,11 @@ date: 2021-10-27T10:00:00.000Z
 featured: false
 url_slides: ""
 address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: "94305"
-  country: United States
+  street: ""
+  city: "Madrid"
+  region: ""
+  postcode: ""
+  country: Spain
 title: "The principal graph of the cosmic web: learning patterns in point cloud
   datasets"
 location: UCM theoretical physics
