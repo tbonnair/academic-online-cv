@@ -35,7 +35,7 @@ address:
   city: "Madrid"
   region: ""
   postcode: ""
-  country: Spain
+  country: "Spain"
 title: "The principal graph of the cosmic web: learning patterns in point cloud
   datasets"
 location: UCM theoretical physics
