@@ -18,10 +18,7 @@ design:
   background:
     image: ""
 map:
-  provider: 'mapnik'
+  provider: 'google'
   api_key: ''
   zoom: 15
-coordinates:
-  latitude: '48.842206'
-  longitude: '2.345169'
 ---
