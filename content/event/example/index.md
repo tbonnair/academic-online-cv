@@ -45,8 +45,8 @@ publishDate: 2017-01-01T00:00:00Z
 tags: []
 projects: []
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)"
-  focal_point: Right
+  caption: ""
+  focal_point: ""
 url_code: ""
 all_day: false
 ---
