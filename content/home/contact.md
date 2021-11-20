@@ -17,4 +17,11 @@ design:
   columns: "2"
   background:
     image: ""
+map:
+  provider: 'mapnik'
+  api_key: ''
+  zoom: 15
+coordinates:
+  latitude: '48.842206'
+  longitude: '2.345169'
 ---
