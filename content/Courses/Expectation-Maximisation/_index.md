@@ -152,4 +152,4 @@ for the amplitudes, centre positions and covariance matrices respectively.
 
 ## Practical implementation: a Python tutorial
 
-See the [jupyter-notebook tutorial](https://github.com/tbonnair/example_courses).
+See the [jupyter-notebook tutorial](https://github.com/tbonnair/example_courses/blob/master/Expectation-Maximisation.ipynb).
