@@ -32,9 +32,9 @@ featured: false
 url_slides: ""
 title: "The principal graph of the cosmic web: learning patterns in point cloud
   datasets"
-location: ""
+location: UCM theoretical physics dept.
 links: []
-event: Seminar at UCM theoretical physics dept.
+event: Seminar
 publishDate: 2017-01-01T00:00:00Z
 tags: []
 projects: []
