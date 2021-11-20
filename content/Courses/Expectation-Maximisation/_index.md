@@ -152,4 +152,4 @@ for the amplitudes, centre positions and covariance matrices respectively.
 
 ## Practical implementation: a Python tutorial
 
-See the [jupyter-notebook tutorial](http://https://github.com/tbonnair/academic-online-cv/blob/master/content/Courses/Expectation-Maximisation/EM_climbing.png).
+See the [jupyter-notebook tutorial](https://github.com/tbonnair/example_courses).
