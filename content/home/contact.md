@@ -17,8 +17,4 @@ design:
   columns: "2"
   background:
     image: ""
-map:
-  provider: 'google'
-  api_key: ''
-  zoom: 15
 ---
