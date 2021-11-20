@@ -19,7 +19,7 @@ authors:
   - admin
   - Aurélien Decelle
   - Nabila Aghanim
-publication: In Physical Review D
+publication: In Physical Review E
 publication_short: ""
 featured: true
 image:
