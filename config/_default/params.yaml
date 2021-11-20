@@ -35,6 +35,10 @@ coordinates:
   latitude: '48.8422951'
   longitude: '2.3442717'
 directions: Staircase B, 3rd floor
+map:
+  provider: 'mapnik'
+  api_key: ''
+  zoom: 15
 
 # Site header
 
