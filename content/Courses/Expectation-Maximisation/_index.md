@@ -75,7 +75,7 @@ $$
 $$
 where $D_\mathrm{KL}(q, p) = \sum q \log q/p \geq 0$ is the Kullback-Leibler divergence and $L = \sum_{\boldsymbol{Z}} q(\boldsymbol{Z}) \log \left[ \frac{p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta})}{q(\boldsymbol{Z})} \right]$.
 
-{{< spoiler text="Want more information about the derivation of this equation?" >}}
+{{< spoiler text="Want more information about the derivation of this equation?" style="color: grey" >}}
 Using Jensen's inequality, stating that, for any random variable $X$ and convex function $f$, $f(\mathbb{E} \lbrace X \rbrace) \leq \mathbb{E} \lbrace f(X) \rbrace$ and the concavity of the logarithm function, we can write the log-likelihood, for any normalised distribution $q(\boldsymbol{Z})$ over the latent variables, as
 $$
   \log p(\boldsymbol{X} | \boldsymbol{\Theta}) \geq L(q, \boldsymbol{\Theta}) = \sum_{\boldsymbol{Z}} q(\boldsymbol{Z}) \log \left[ \frac{p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta})}{q(\boldsymbol{Z})} \right].
