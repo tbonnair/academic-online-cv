@@ -115,15 +115,15 @@ $$
   p_{ik} = \frac{\pi_k \mathcal{N}(\boldsymbol{x}_i, \boldsymbol{\theta}_k^{(t)})}{\sum_{j=1}^K \pi_j \mathcal{N}(\boldsymbol{x}_i, \boldsymbol{\theta}_j^{(t)})}.
 $$
 
-{{< spoiler text="Bayes theorem and the derivation" >}}
+{{< spoiler text="Bayes theorem and the derivation" style="color: grey">}}
 Bayes' theorem allows to express the probability of an event given some prior knowledge. In our context, we can write
 $$
 p(z_i = k | \boldsymbol{x}_i, \boldsymbol{\Theta}^{(t)}) = \frac{p( \boldsymbol{x}_i | z_i = k, \boldsymbol{\Theta}^{(t)} ) p(z_i = k | \boldsymbol{\Theta}^{(t)}) }{ p(\boldsymbol{x}_i | \boldsymbol{\Theta}^{(t)}) }.
 $$
-{style="color: red"}
+{style="color: grey"}
 
 The left term in the numerator is the probability of observing $\boldsymbol{x}_i$ knowing that it belongs to the cluster $k$ and the parameters of the model. The right one is the probability of $\boldsymbol{x}_i $ being in the cluster $k$ given parameters of the model. Finally, the denominator is the probability of observing $\boldsymbol{x}_i $ given parameters of the model and independantly of any belonging to Gaussian clusters.
-{style="color: red"}
+{style="color: grey"}
 {{< /spoiler >}}
 
   This estimation of $p_{ik}$ is then used in the M-step to evaluate the maximum of the lower-bound
@@ -137,6 +137,7 @@ $$
 
 {{< callout note >}}
 This equation is very similar to the one from the very first equation of the lesson, the one optimised by the K-means algorithm! However, in the K-means one, a datapoint is associated to a unique cluster while the GMM method not only includes a parameter for the shape of the cluster through the covariance matrices but also quantifies the probability of a datapoint to be represented by a given cluster $k$ through the responsibility $ p_{ik} $.
+
 {{< /callout >}}
 
 It is hence possible to derive an update equation for each parameter of $\boldsymbol{\Theta}^{(t+1)}$ as
