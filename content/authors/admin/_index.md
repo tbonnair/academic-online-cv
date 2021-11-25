@@ -40,4 +40,4 @@ title: Tony Bonnaire
 email: ""
 ---
 I graduated from the french CentraleSupélec with a major background in applied mathematics and algorithmics. After a year of working as a research engineer in Thales, I decided to begin a Ph.D. program in Université Paris Saclay, at the Institut d'Astrophysique Spatiale,under the supervision of Nabila Aghanim and Aurélien Decelle.
-I'm currently a postdoctoral researcher at the École Normale Supérieure (ENS) in Paris working on the interfaces between statistical physics and machine learning algorithms in Giulio Biroli's team at the center of data science in ENS.
+I'm currently a postdoctoral researcher at the École Normale Supérieure (ENS) in Paris working on the interfaces between statistical physics and machine learning algorithms in Giulio Biroli's team at the center for data science in ENS.
