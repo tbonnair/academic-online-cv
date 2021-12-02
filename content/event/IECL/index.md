@@ -5,11 +5,11 @@ On the other hand, we will study spatially continuous datasets assuming as stand
 slides: ""
 url_pdf: ""
 summary: ""
-date_end: 2021-11-27T03:00:00.000Z
+date_end: 2021-11-27T11:00:00.000Z
 event_url: https://iecl.univ-lorraine.fr/evenements/seminaires/seminaire-probabilites-et-statistique/
 authors: []
 url_video: ""
-date: 2021-10-27T02:00:00.000Z
+date: 2021-11-27T10:00:00.000Z
 featured: false
 url_slides: ""
 title: "Pattern extraction from point-cloud datasets and cosmological applications"
