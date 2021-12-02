@@ -23,15 +23,14 @@ abstract: The spatial distribution of galaxies in the Universe is not uniform
 slides: ""
 url_pdf: ""
 summary: ""
-date_end: 2021-10-27T11:00:00.000Z
-event_url: https://www.ucm.es/teorica/seminarios-de-fisica-teorica
+date_end: 2021-12-02T11:00:00.000Z
+event_url: https://iecl.univ-lorraine.fr/evenements/seminaires/seminaire-probabilites-et-statistique/
 authors: []
 url_video: ""
-date: 2021-10-27T10:00:00.000Z
+date: 2021-12-02T10:00:00.000Z
 featured: false
 url_slides: ""
-title: "The principal graph of the cosmic web: learning patterns in point cloud
-  datasets"
+title: "Pattern extraction from point-cloud datasets and cosmological applications"
 location: UCM, theoretical physics dept.
 links: []
 event: Seminar
