@@ -25,7 +25,7 @@ social:
     link: https://www.linkedin.com/in/tbonnair
 organizations:
   - name: École Normale Supérieure de Paris
-    url: https://www.ens.psl.eu/
+    url: https://csd.ens.psl.eu
 education:
   courses:
     - course: Ph.D. in Astrophysics & Cosmology
@@ -40,4 +40,4 @@ title: Tony Bonnaire
 email: ""
 ---
 I graduated from the french engineering school CentraleSupélec with a major background in applied mathematics and algorithmic. After a year of working as a research engineer in Thales, I decided to begin a Ph.D. program in Université Paris Saclay, at the Institut d'Astrophysique Spatiale, under the supervision of Nabila Aghanim (IAS) and Aurélien Decelle (UCM, LRI).
-I'm currently a postdoctoral researcher at the École Normale Supérieure (ENS) in Paris working on the interfaces between statistical physics and machine learning algorithms in Giulio Biroli's team at the center for data science.
+I'm currently a postdoctoral researcher at the École Normale Supérieure (ENS) in Paris working on the interfaces between statistical physics and machine learning algorithms in Giulio Biroli's team at the center for data sciences.
