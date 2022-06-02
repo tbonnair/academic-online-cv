@@ -11,7 +11,7 @@ date_end: 2022-06-02T06:00:00.000Z
 event_url: https://www.ipht.fr
 authors: []
 url_video: ""
-date: 2021-06-02T06:00:00.000Z
+date: 2022-06-02T06:00:00.000Z
 featured: false
 url_slides: ""
 title: "Identifying and quantifying the information of the cosmic web"
