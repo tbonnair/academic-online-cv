@@ -27,7 +27,7 @@ $$
 where we added $N$ to normalize the matrix and $\boldsymbol{J}$ is a random matrix with $j_{ij} \sim \mathcal{N}(0,1)$. Such matrices are called **Gaussian Wigner matrices** and belong to the **Gaussian orthgonal ensemble (GOE)** because their symmetry makes them invariant under orthogonal transformations.
   {{< spoiler text="Why is that important?" style="color: grey">}}
   Many results of random matrix theory are derived by relying on one of the following assumption: i) the entries of the matrix are independant; ii) the matrix is invariant under some transformations (orthogonal in real case or unitary in complex case). These are, grossly speaking, the two cases in which the existing mathematical tools allow to study the random matrices in details from an analytical perspective.
-  The type of matrix we have built just before, with Gaussian independant entries, is a very particular case since it belongs to the two families described here: it is a matrix with independant entries but is also invariant under orthogonal transformations. In fact, TODO:NAME showed that the GOE is the only one fulfilling simultaneously these two conditions.
+  The type of matrix we have built just before, with Gaussian independant entries, is a very particular case since it belongs to the two families described here: it is a matrix with independant entries but is also invariant under orthogonal transformations. In fact, the GOE is the only ensemble fulfilling simultaneously these two conditions.
 
   While independance of the entries is straightforward to see, the invariance under orthogonal transformation can be deduced when writing the probability measure associated with the ensemble as
 $$
@@ -44,7 +44,7 @@ where $\mathrm{Tr} \boldsymbol{M}$ designates the trace of the matrix $M$ (i.e. 
 
   The first thing one wants to have a look at when dealing with a matrix are its eigenvalues that are linked with many properties of the system the matrix represents such as the stability of a dynamical system or the energy levels of vibrating atoms. As a reminder, the eigenvalues $\lambda_i$ of a matrix are defined as the factors multiplying the directions that remain unchanged by application of the matrix $\boldsymbol{M}$ (the so-called eigenvectors $\boldsymbol{v}_{i}$),
 $$
-  \boldsymbol{M} \boldsymbol{v}_i = \lambda_i \boldsymbol{v}_i.
+\boldsymbol{M} \boldsymbol{v}_i = \lambda_i \boldsymbol{v}_i.
 $$
   For our matrix $\boldsymbol{M}$, we hence have $N$ eigenvalues that we order ascendingly as $\lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_N$.
   A generic question that one may ask is ''How are the eigenvalues of the random matrix at hand distributed?''. This question is actually at the heart of random matrix theory and mathematicians have developped several tools allowing to answer it.
@@ -60,7 +60,7 @@ $$
   for $z$ in the complexe plane excluding the eigenvalues $\lambda_i$. 
   The Stieltjes transform can be written matricially as the normalised trace of some matrix $\boldsymbol{G}_{\boldsymbol{M}} = (z\boldsymbol{I} - M)^{-1}$ called the **resolvent** of $\boldsymbol{M}$,
 $$
-g_{\boldsymbol{M}} = \frac{1}{N} \mathrm{Tr}\:{\boldsymbol{G}_\boldsymbol{M}}.
+g_{\boldsymbol{M}} = \frac{1}{N} \mathrm{Tr}\,{\boldsymbol{G}_\boldsymbol{M}}.
 $$
   The two formulations are equivalent and the knowledge of $\boldsymbol{G}_{\boldsymbol{M}}$ implies the one of the Stieltjes transform (note however that the reciprocal is not true).
 
@@ -78,7 +78,7 @@ $$
 and taking the $\epsilon \rightarrow 0^+$ limit leads to
 $$
 \begin{align}
-\operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \, \mathcal{g}(\lambda - i\epsilon) &= \frac{\pi}{N} \sum_{k=1}^N \delta(\lambda - \lambda_k), \\
+\operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \, \mathcal{g}(\lambda - i\epsilon) &= \frac{\pi}{N} \sum_{k=1}^N \delta(\lambda - \lambda_k), \\\\\\
 &= \pi \rho(\lambda)
 \end{align}
 $$
@@ -103,13 +103,13 @@ We first make use of the rotational invariance of the problem as we saw earlier 
 $$
 \boldsymbol{A} = 
   \begin{pmatrix}
-  a_{11} & \boldsymbol{A}_{12} \\
+  a_{11} & \boldsymbol{A}_{12} \\\\\\
   \boldsymbol{A}_{21} & \boldsymbol{A}_{22}
   \end{pmatrix},
 $$
 where $a_11$ is the scalar entry $(1,1)$ of the matrix, $\boldsymbol{A}_{12}$ and $\boldsymbol{A}_{21}$ are vectors excluding the first element and $\boldsymbol{A}_{22}$ is a $(N-1)\times (N-1)$ matrix.
 
-Inspecting the elements of this matrix, we first remark that $a_{11} = z - m_{11}$ and $\boldsymbol{A}_{12}$ = \boldsymbol{M}_{12}$ since $z$ is only acting on the diagonal. Last remark is that $\boldsymbol{A}_{22}$ is in fact the inverse resolvent matrix of a Wigner matrix of size $N-1$. From this decomposition, we can use the **Schur complement formula**, to compute the first element of the inverse of $\boldsymbol{A}$, i.e. $g_{11}$. This goes as
+Inspecting the elements of this matrix, we first remark that $a_{11} = z - m_{11}$ and $\boldsymbol{A}_{12}$ = \boldsymbol{M}_{12}$ since $z$ is only acting on the diagonal. The last remark is that $\boldsymbol{A}_{22}$ is in fact the inverse resolvent matrix of a Wigner matrix of size $N-1$. From this decomposition, we can use the **Schur complement formula**, to compute the first element of the inverse of $\boldsymbol{A}$, i.e. $g_{11}$. This goes as
 $$
 g_{11} = \frac{1}{a_{11} - \boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21}}
 $$
@@ -139,8 +139,8 @@ Let us do it term by term:
    Since the elements of the first row and column are independant from other elements in the Wigner ensemble, we obtain
    $$
    \begin{align}
-   \mathbb{E}( a_{1i} (\boldsymbol{A}_{22}^{-1})_{ij} \boldsymbol{a}_{j1}) &= \mathbb{E}(a_{1i} a_{j1}) \, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}) \\
-   &= \mathbb{E}(x_{1i} x_{j1}) \, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}) \\
+   \mathbb{E}( a_{1i} (\boldsymbol{A}_{22}^{-1})_{ij} \boldsymbol{a}_{j1}) &= \mathbb{E}(a_{1i} a_{j1}) \, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}), \\\\\\
+   &= \mathbb{E}(x_{1i} x_{j1}) \, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}), \\\\\\
    &= \frac{1}{N} \delta_{ij} \, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}).
    \end{align}
    $$
@@ -182,7 +182,7 @@ $$
 From there, a Taylor expansion at first order reads
 $$
 \begin{align}
-g(z) &\approx \frac{z}{2} \pm \frac{z}{2}(1-\frac{2}{z^2}), \\
+g(z) &\approx \frac{z}{2} \pm \frac{z}{2}(1-\frac{2}{z^2}), \\\\\\
 &\approx \frac{z}{2} \pm \frac{z}{2} \mp \frac{1}{z}.
 \end{align}
 $$
@@ -194,11 +194,11 @@ Consequently, if we choose the positive sign, we end up with a $z$ behaviour whi
 After these efforts, let us pause a moment to think about what we have done and where we stand. So far, we computed the expected Stieltjes transform of matrices from the GOE and obtained a closed-form formula for $g(z)$. What we wanted to compute is the distribution of eigenvalues that is linked with the Stieltjes transform by the Sokhotski–Plemelj formula from Eq. (\ref{eq:Stieltjes_inverse}). It is given by
 $$
 \begin{align}
-\rho(\lambda) &= \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \, \mathcal{g}(\lambda - i\epsilon), \\
-&= \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+}  \mathrm{Im} \, \frac{-\lambda - i\epsilon + \sqrt{\lambda^2 - \epsilon^2 - 4 +2i\lambda \epsilon} }{2}, \\
+\rho(\lambda) &= \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \, \mathcal{g}(\lambda - i\epsilon), \\\\\\
+&= \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+}  \mathrm{Im} \, \frac{-\lambda - i\epsilon + \sqrt{\lambda^2 - \epsilon^2 - 4 +2i\lambda \epsilon} }{2}, \\\\\\
 &=
 \begin{cases}
-0, & \mathrm{if} \; |\lambda| > 2, \\ 
+0, & \mathrm{if} \; |\lambda| > 2, \\\\\\
 \frac{1}{2\pi} \sqrt{4-\lambda^2}, & \mathrm{if} \; |\lambda| < 2,
 \end{cases} \label{eq:semi-circle}\tag{5}
 
@@ -215,7 +215,7 @@ $$
 where
 $$
 \begin{align}
-p &= \frac{1}{\sqrt{2}} \sqrt{\sqrt{a^2 + b^2} + a}, \\
+p &= \frac{1}{\sqrt{2}} \sqrt{\sqrt{a^2 + b^2} + a}, \\\\\\
 q &= \frac{\mathrm{sign}(b)}{\sqrt{2}} \sqrt{\sqrt{a^2 + b^2} - a}.
 \end{align}
 $$
