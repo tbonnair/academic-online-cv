@@ -132,7 +132,7 @@ Let us do it term by term:
 
 3) Finally, let us decompose the last term as
    $$
-   P = 2
+   \mathbb{E}( \boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21} ) = 2,
    $$
    where we simply re-wrote the product of matrices as a sum.
 
