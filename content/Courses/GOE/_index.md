@@ -60,7 +60,7 @@ $$
   for $z$ in the complexe plane excluding the eigenvalues $\lambda_i$. 
   The Stieltjes transform can be written matricially as the normalised trace of some matrix $\boldsymbol{G}_{\boldsymbol{M}} = (z\boldsymbol{I} - M)^{-1}$ called the **resolvent** of $\boldsymbol{M}$,
 $$
-g_{\boldsymbol{M}} = \frac{1}{N} \mathrm{Tr} {\boldsymbol{G}_\boldsymbol{M}}.
+g_{\boldsymbol{M}} = \frac{1}{N} \mathrm{Tr} \\, {\boldsymbol{G}_\boldsymbol{M}}.
 $$
   The two formulations are equivalent and the knowledge of $\boldsymbol{G}_{\boldsymbol{M}}$ implies the one of the Stieltjes transform (note however that the reciprocal is not true).
 
