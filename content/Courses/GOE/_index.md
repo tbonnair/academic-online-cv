@@ -58,7 +58,7 @@ $$
 g_{\boldsymbol{M}}(z) = \frac{1}{N} \sum_{i=1}^N \frac{1}{z - \lambda_i},  \label{eq:Stieltjes_def}\tag{1}
 $$
   for $z$ in the complexe plane excluding the eigenvalues $\lambda_i$. 
-  The Stieltjes transform can be written matricially as the normalised trace of some matrix $\boldsymbol{G}_{\boldsymbol{M}} = (z\boldsymbol{I} - M)^{-1}$ called the **Resolvent** of $\boldsymbol{M}$,
+  The Stieltjes transform can be written matricially as the normalised trace of some matrix $\boldsymbol{G}_{\boldsymbol{M}} = (z\boldsymbol{I} - M)^{-1}$ called the **resolvent** of $\boldsymbol{M}$,
 $$
 g_{\boldsymbol{M}} = \frac{1}{N} \mathrm{Tr} \\, {\boldsymbol{G}_\boldsymbol{M}}.
 $$
@@ -67,7 +67,7 @@ $$
   With this definition, we directly see that the eigenvalues of $\boldsymbol{M}$ are linked in a very particular way to the Stieltjes transform since they cancel out the denominator and are hence excluded from the interval of definition of g_{\boldsymbol{M}.
   Mathematicians formulated this idea through the Sokhotski–Plemelj formula that links the density of eigenvalues $\rho(\lambda)$ and the Stieltjes transform as
 $$
-\rho(\lambda) = \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \, \mathcal{g}(\lambda - i\epsilon).  \label{eq:Stieltjes_inverse}\tag{2}
+\rho(\lambda) = \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \\, \mathcal{g}(\lambda - i\epsilon).  \label{eq:Stieltjes_inverse}\tag{2}
 $$
   This formula may look scary at first sight but let's decompose it. It says that the density of eigenvalues can be obtained by evaluating the Stieltjes transform at a precise complex number that is $\lambda - i \epsilon$ with a very small $\epsilon$. This makes sense because we have seen before that the Stieltjes transform is not defined at eigenvalues $\lambda$ but taking it slightly away along the complex axis is authorized. Why not along the real axis you may ask? Well, if we consider the eigenvalue density as a continuum, then "slightly away" from $\lambda_i$ on the real axis is $\lambda_j$, another eigenvalue at which we cannot evaluate the Stieltjes transform. However, since in our case the matrix is symetric, all the eigenvalues are real and along the complex axis, we are not bothered by other eigenvalues and the Stieltjes transform is well defined.
   Let us now have a look at the imaginary part of this quantity 
@@ -78,7 +78,7 @@ $$
 and taking the $\epsilon \rightarrow 0^+$ limit leads to
 $$
 \begin{align}
-\operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \, \mathcal{g}(\lambda - i\epsilon) &= \frac{\pi}{N} \sum_{k=1}^N \delta(\lambda - \lambda_k), \\\\\\
+\operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \\, \mathcal{g}(\lambda - i\epsilon) &= \frac{\pi}{N} \sum_{k=1}^N \delta(\lambda - \lambda_k), \\\\\\
 &= \pi \rho(\lambda)
 \end{align}
 $$
@@ -119,7 +119,7 @@ Let us do it term by term:
 
 1) The first term $g_{11}$ is simply the expectation of one term of the diagonal of the resolvent. By rotation invariance, it is given by
    $$
-   \mathbb{E}(g_{11}) = \frac{1}{N} \mathbb{E}(\mathrm{Tr} \,\boldsymbol{G}) = g.
+   \mathbb{E}(g_{11}) = \frac{1}{N} \mathbb{E}(\mathrm{Tr} \\,\boldsymbol{G}) = g.
    $$
 
 2) For the denominator, we first have
@@ -132,7 +132,7 @@ Let us do it term by term:
 
 3) Finally, let us decompose the last term as
    $$
-   \mathbb{E}(\boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21}) = \sum_{i,j=1}^N \mathbb{E}( a_{1i} (\boldsymbol{A}_{22}^{-1})_{ij} a_{j1})  \label{eq:denom2}\tag{4},
+   \mathbb{E}( \boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21} ) = \sum_{i,j=1}^N \mathbb{E}( a_{1i} (\boldsymbol{A}_{22}^{-1})_{ij} a_{j1} ),
    $$
    where we simply re-wrote the product of matrices as a sum.
 
@@ -144,7 +144,7 @@ Let us do it term by term:
    &= \frac{1}{N} \delta_{ij} \, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}).
    \end{align}
    $$
-   This gives us for the full sum Eq. (\ref{eq:denom2})
+   This gives us for the full sum
    $$
    \mathbb{E}(\boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21}) = \frac{1}{N} \mathbb{E}(\boldsymbol{A}_{22}^{-1}).
    $$
@@ -194,8 +194,8 @@ Consequently, if we choose the positive sign, we end up with a $z$ behaviour whi
 After these efforts, let us pause a moment to think about what we have done and where we stand. So far, we computed the expected Stieltjes transform of matrices from the GOE and obtained a closed-form formula for $g(z)$. What we wanted to compute is the distribution of eigenvalues that is linked with the Stieltjes transform by the Sokhotski–Plemelj formula from Eq. (\ref{eq:Stieltjes_inverse}). It is given by
 $$
 \begin{align}
-\rho(\lambda) &= \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \, \mathcal{g}(\lambda - i\epsilon), \\\\\\
-&= \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+}  \mathrm{Im} \, \frac{-\lambda - i\epsilon + \sqrt{\lambda^2 - \epsilon^2 - 4 +2i\lambda \epsilon} }{2}, \\\\\\
+\rho(\lambda) &= \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \\, \mathcal{g}(\lambda - i\epsilon), \\\\\\
+&= \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+}  \mathrm{Im} \\, \frac{-\lambda - i\epsilon + \sqrt{\lambda^2 - \epsilon^2 - 4 +2i\lambda \epsilon} }{2}, \\\\\\
 &=
 \begin{cases}
 0, & \mathrm{if} \; |\lambda| > 2, \\\\\\
