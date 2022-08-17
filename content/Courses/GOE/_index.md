@@ -220,7 +220,7 @@ p &= \frac{1}{\sqrt{2}} \sqrt{\sqrt{a^2 + b^2} + a}, \\\\\\
 q &= \frac{\mathrm{sign}(b)}{\sqrt{2}} \sqrt{\sqrt{a^2 + b^2} - a}.
 \end{align}
 $$
-From this, we can re-write the square root of the distribution and compute easily the limit to obtain the Wigner semi-circle law of Eq. (\ref{eq:semi-circle}).
+From this, we can re-write the square root of the distribution and compute easily the limit to obtain the Wigner semi-circle law.
 
   {style="color: grey"}
   {{< /spoiler >}}
