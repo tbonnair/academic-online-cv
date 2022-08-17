@@ -131,9 +131,9 @@ Let us do it term by term:
    since $M_{11}$ is a centred Gaussian random variable.
 
 3) Finally, let us decompose the last term as
-   $$
+   {{ <math>}} $$
    \mathbb{E}( \boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21} ) = \sum \mathbb{E}( a_{1i} (\boldsymbol{A}_{22}^{-1})_{ij} a_{j1} ),
-   $$
+   $$ {{ </math>}} 
    where we simply re-wrote the product of matrices as a sum.
 
    Since the elements of the first row and column are independant from other elements in the Wigner ensemble, we obtain
