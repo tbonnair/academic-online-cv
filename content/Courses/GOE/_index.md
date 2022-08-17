@@ -131,9 +131,9 @@ Let us do it term by term:
    since $M_{11}$ is a centred Gaussian random variable.
 
 3) Finally, let us decompose the last term as
-   {{ <math>}} $$
-   \mathbb{E}( \boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21} ) = \sum \mathbb{E}( a_{1i} (\boldsymbol{A}_{22}^{-1})_{ij} a_{j1} ),
-   $$ {{ </math>}} 
+   $$
+   P = 2
+   $$
    where we simply re-wrote the product of matrices as a sum.
 
    Since the elements of the first row and column are independant from other elements in the Wigner ensemble, we obtain
@@ -218,7 +218,7 @@ p &= \frac{1}{\sqrt{2}} \sqrt{\sqrt{a^2 + b^2} + a}, \\\\\\
 q &= \frac{\mathrm{sign}(b)}{\sqrt{2}} \sqrt{\sqrt{a^2 + b^2} - a}.
 \end{align}
 $$
-From this, we can re-write the square root of the distribution and compute easily the limit to obtain the Wigner semi-circle law of Eq. (\ref{eq:semi-circle}).
+From this, we can re-write the square root of the distribution and compute easily the limit to obtain the Wigner semi-circle law.
 
   {style="color: grey"}
   {{< /spoiler >}}
