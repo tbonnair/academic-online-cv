@@ -32,8 +32,8 @@ where we added $N$ to normalize the matrix and $\boldsymbol{J}$ is a random matr
   While independance of the entries is straightforward to see, the invariance under orthogonal transformation can be deduced when writing the probability measure associated with the ensemble as
 $$
 \begin{align}
-p(M) &= \exp\left(\frac{-N\sum_{i \neq j}^N m_{ij}^2}{4} - \frac{N\sum_{i=1}^N m_{ii}^2}{4} \right) \\
-&= \exp\left(\frac{-N\sum_{i, j = 1}^N m_{ij}^2}{4} \right) \\
+p(M) &= \exp\left(\frac{-N\sum_{i \neq j}^N m_{ij}^2}{4} - \frac{N\sum_{i=1}^N m_{ii}^2}{4} \right) \\\\\\
+&= \exp\left(\frac{-N\sum_{i, j = 1}^N m_{ij}^2}{4} \right) \\\\\\
 &= \exp\left(\frac{-N}{4} \mathrm{Tr} \boldsymbol{M}^2 \right),
 \end{align}
 $$
