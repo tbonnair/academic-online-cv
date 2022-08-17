@@ -200,8 +200,7 @@ $$
 \begin{cases}
 0, & \mathrm{if} \; |\lambda| > 2, \\\\\\
 \frac{1}{2\pi} \sqrt{4-\lambda^2}, & \mathrm{if} \; |\lambda| < 2,
-\end{cases} \label{eq:semi-circle}\tag{5}
-
+\end{cases}
 \end{align}
 $$
 where for the last equality, we used the principal square root definition of complex numbers.
