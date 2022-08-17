@@ -2,7 +2,7 @@
 title: A first step in random matrix theory
 linkTitle: RMT_GOE
 summary: A first introduction to some basic ideas of random matrix theory
-date: '2021-11-04'
+date: '2022-08-17'
 type: book
 math: true
 ---
@@ -16,8 +16,9 @@ math: true
   The type of objects we are interested in are hence square matrices $\boldsymbol{M} \in \mathbb{R}^{N \times N}$ where each element $m_{ij}$ is a random variable. An example of such a matrix is reproduced in the figure below where $N=100$ and $m_{ij} = m_{ji}$ are drawn from a centred Gaussian distribution of variance $1/N$, noted $\mathcal{N}(0, 1)$ with twice the variance on the diagonal, meaning that each pixel that you see is a realisation of a Gaussian variable. As can be intuited and appreciated visually, there is no particular pattern since each element is an independant realisation of all others.
 
   <p align="center">
-  <img src="./https://github.com/tbonnair/academic-online-cv/blob/master/content/Courses/GOE/random_matrix_example.png?raw=true" alt="fig:random_matrix" width="500"
+  <img src="https://github.com/tbonnair/academic-online-cv/blob/master/content/Courses/GOE/random_matrix_example.png?raw=true" alt="fig:random_matrix" width="500"
   </p>
+
 
 Mathematically, we can write that
 $$
