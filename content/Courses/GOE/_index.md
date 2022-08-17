@@ -109,7 +109,7 @@ $$
 $$
 where $a_11$ is the scalar entry $(1,1)$ of the matrix, $\boldsymbol{A}_{12}$ and $\boldsymbol{A}_{21}$ are vectors excluding the first element and $\boldsymbol{A}_{22}$ is a $(N-1)\times (N-1)$ matrix.
 
-Inspecting the elements of this matrix, we first remark that {{< math >}}$a_{11} = z - m_{11}${{< /math >}} and {{< math >}}$\boldsymbol{A}_{12} = \boldsymbol{M}_{12}${{< /math >}} since {{< math >}}$z${{< /math >}} is only acting on the diagonal. The last remark is that {{< math >}}$\boldsymbol{A}_{22}${{< /math >}} is in fact the inverse resolvent matrix of a Wigner matrix of size {{< math >}}$N-1${{< /math >}}. From this decomposition, we can use the **Schur complement formula**, to compute the first element of the inverse of {{< math >}}$\boldsymbol{A}${{< /math >}}, i.e. {{< math >}}$g_{11}${{< /math >}}. This goes as
+Inspecting the elements of this matrix, we first remark that $a_{11} = z - m_{11}$ and $\boldsymbol{A}_{12} = \boldsymbol{M}_{12}$ since $z$ is only acting on the diagonal. The last remark is that $\boldsymbol{A}_{22}$ is in fact the inverse resolvent matrix of a Wigner matrix of size $N-1$. From this decomposition, we can use the **Schur complement formula**, to compute the first element of the inverse of $\boldsymbol{A}$, i.e. $g_{11}$. This goes as
 $$
 g_{11} = \frac{1}{a_{11} - \boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21}}
 $$
