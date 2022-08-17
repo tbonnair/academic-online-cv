@@ -109,7 +109,7 @@ $$
 $$
 where $a_11$ is the scalar entry $(1,1)$ of the matrix, $\boldsymbol{A}_{12}$ and $\boldsymbol{A}_{21}$ are vectors excluding the first element and $\boldsymbol{A}_{22}$ is a $(N-1)\times (N-1)$ matrix.
 
-Inspecting the elements of this matrix, we first remark that $a_{11} = z - m_{11}$ and $\boldsymbol{A}_{12} = \boldsymbol{M}_{12}$ since $z$ is only acting on the diagonal. The last remark is that $\boldsymbol{A}_{22}$ is in fact the inverse resolvent matrix of a Wigner matrix of size $N-1$. From this decomposition, we can use the **Schur complement formula**, to compute the first element of the inverse of $\boldsymbol{A}$, i.e. $g_{11}$. This goes as
+Inspecting the elements of this matrix, we first remark that $a_{11} = z - m_{11}$ and $\boldsymbol{A}_{12} = \boldsymbol{M}_{12}$ since $z$ is only acting on the diagonal. The last remark is that $\boldsymbol{A}_{22}$ is in fact the inverse resolvent matrix of a Wigner matrix of size $N-1$. From this decomposition, we can use the Schur complement formula, to compute the first element of the inverse of $\boldsymbol{A}$, i.e. $g_{11}$. This goes as
 $$
 g_{11} = \frac{1}{a_{11} - \boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21}}
 $$
@@ -131,11 +131,9 @@ Let us do it term by term:
    since $M_{11}$ is a centred Gaussian random variable.
 
 3) Finally, let us decompose the last term as
-   {{< math >}}
    $$
    \mathbb{E}( \boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21} ) = \sum \mathbb{E}( a_{1i} (\boldsymbol{A}_{22}^{-1})_{ij} a_{j1} ),
    $$
-   {{< /math >}}
    where we simply re-wrote the product of matrices as a sum.
 
    Since the elements of the first row and column are independant from other elements in the Wigner ensemble, we obtain
@@ -154,7 +152,7 @@ Let us do it term by term:
    $$
    \frac{1}{N-1} \mathbb{E}(\boldsymbol{A}_{22}^{-1}) = g.
    $$
-   What we have is however not a denominator of $N-1$ but $N$. To pursue the calculation, we set put ourselves in the context of high-dimension limit where $N \approx N - 1$ when $N \gg 1$.
+   What we have is however not a denominator of $N-1$ but $N$. To pursue the calculation, we set put ourselves in the context of high-dimension limit where $N \approx N - 1$ when $N \gg 1$.
 
    
 
@@ -220,7 +218,7 @@ p &= \frac{1}{\sqrt{2}} \sqrt{\sqrt{a^2 + b^2} + a}, \\\\\\
 q &= \frac{\mathrm{sign}(b)}{\sqrt{2}} \sqrt{\sqrt{a^2 + b^2} - a}.
 \end{align}
 $$
-From this, we can re-write the square root of the distribution and compute easily the limit to obtain the Wigner semi-circle law.
+From this, we can re-write the square root of the distribution and compute easily the limit to obtain the Wigner semi-circle law of Eq. (\ref{eq:semi-circle}).
 
   {style="color: grey"}
   {{< /spoiler >}}
@@ -245,4 +243,3 @@ $$
 $$
 
 where the same kind of results for the eigenvalue distribution can be obtained and leads to what is called the Marcenko-Pastur distribution which is hence the equivalent of the Wigner semi-circle law for this matrix ensemble.
-
