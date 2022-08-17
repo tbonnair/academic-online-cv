@@ -1,6 +1,6 @@
 ---
 title: A first step in random matrix theory
-linkTitle: RMT_GOE
+linkTitle: Random matrix theory and Gaussian orthogonal ensemble
 summary: A first introduction to some basic ideas of random matrix theory
 date: '2022-08-17'
 type: book
