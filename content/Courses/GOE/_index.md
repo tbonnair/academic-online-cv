@@ -58,7 +58,7 @@ $$
 g_{\boldsymbol{M}}(z) = \frac{1}{N} \sum_{i=1}^N \frac{1}{z - \lambda_i},  \label{eq:Stieltjes_def}\tag{1}
 $$
   for $z$ in the complexe plane excluding the eigenvalues $\lambda_i$. 
-  The Stieltjes transform can be written matricially as the normalised trace of some matrix $\boldsymbol{G}_{\boldsymbol{M}} = (z\boldsymbol{I} - M)^{-1}$ called the **resolvent** of $\boldsymbol{M}$,
+  The Stieltjes transform can be written matricially as the normalised trace of some matrix $\boldsymbol{G}_{\boldsymbol{M}} = (z\boldsymbol{I} - M)^{-1}$ called the **Resolvent** of $\boldsymbol{M}$,
 $$
 g_{\boldsymbol{M}} = \frac{1}{N} \mathrm{Tr} \\, {\boldsymbol{G}_\boldsymbol{M}}.
 $$
