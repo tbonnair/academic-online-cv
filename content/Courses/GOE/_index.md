@@ -24,7 +24,7 @@ Mathematically, we can write that
 $$
 \boldsymbol{M} = \frac{\boldsymbol{J} + \boldsymbol{J}^\mathrm{T}}{\sqrt{2N}},
 $$
-where we added $N$ to normalize the matrix and $\boldsymbol{J}$ is a random matrix with $j_{ij} \sim \mathcal{N}(0,1)$. Such matrices are called Gaussian Wigner matrices and belong to the Gaussian orthgonal ensemble (GOE) because their symmetry makes them invariant under orthogonal transformations.
+where we added $N$ to normalize the matrix and $\boldsymbol{J}$ is a random matrix with $j_{ij} \sim \mathcal{N}(0,1)$. Such matrices are called Gaussian Wigner matrices and belong to the Gaussian orthogonal ensemble (GOE) because their symmetry makes them invariant under orthogonal transformations.
   {{< spoiler text="Why is that important?" style="color: grey">}}
   Many results of random matrix theory are derived by relying on one of the following assumption: i) the entries of the matrix are independant; ii) the matrix is invariant under some transformations (orthogonal in real case or unitary in complex case). These are, grossly speaking, the two cases in which the existing mathematical tools allow to study the random matrices in details from an analytical perspective.
   The type of matrix we have built just before, with Gaussian independant entries, is a very particular case since it belongs to the two families described here: it is a matrix with independant entries but is also invariant under orthogonal transformations. In fact, the GOE is the only ensemble fulfilling simultaneously these two conditions.
@@ -64,7 +64,7 @@ g_{\boldsymbol{M}} = \frac{1}{N} \mathrm{Tr} \\, {\boldsymbol{G}_\boldsymbol{M}}
 $$
   The two formulations are equivalent and the knowledge of $\boldsymbol{G}_{\boldsymbol{M}}$ implies the one of the Stieltjes transform (note however that the reciprocal is not true).
 
-  With this definition, we directly see that the eigenvalues of $\boldsymbol{M}$ are linked in a very particular way to the Stieltjes transform since they cancel out the denominator and are hence excluded from the interval of definition of g_{\boldsymbol{M}.
+  With this definition, we directly see that the eigenvalues of $\boldsymbol{M}$ are linked in a very particular way to the Stieltjes transform since they cancel out the denominator and are hence excluded from the interval of definition of $g_{\boldsymbol{M}}$.
   Mathematicians formulated this idea through the Sokhotski–Plemelj formula that links the density of eigenvalues $\rho(\lambda)$ and the Stieltjes transform as
 $$
 \rho(\lambda) = \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \\, \mathcal{g}(\lambda - i\epsilon).  \label{eq:Stieltjes_inverse}\tag{2}
@@ -109,7 +109,7 @@ $$
 $$
 where $a_11$ is the scalar entry $(1,1)$ of the matrix, $\boldsymbol{A}_{12}$ and $\boldsymbol{A}_{21}$ are vectors excluding the first element and $\boldsymbol{A}_{22}$ is a $(N-1)\times (N-1)$ matrix.
 
-Inspecting the elements of this matrix, we first remark that $a_{11} = z - m_{11}$ and $\boldsymbol{A}_{12} = \boldsymbol{M}_{12}$ since $z$ is only acting on the diagonal. The last remark is that $\boldsymbol{A}_{22}$ is in fact the inverse resolvent matrix of a Wigner matrix of size $N-1$. From this decomposition, we can use the Schur complement formula, to compute the first element of the inverse of $\boldsymbol{A}$, i.e. $g_{11}$. This goes as
+Inspecting the elements of this matrix, we first remark that $a_{11} = z - m_{11}$ and $\boldsymbol{A}_{12} = -\boldsymbol{M}_{12}$ since $z$ is only acting on the diagonal. The last remark is that $\boldsymbol{A}_{22}$ is in fact the inverse resolvent matrix of a Wigner matrix of size $N-1$. From this decomposition, we can use the Schur complement formula, to compute the first element of the inverse of $\boldsymbol{A}$, i.e. $g_{11}$. This goes as
 $$
 g_{11} = \frac{1}{a_{11} - \boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21}}
 $$
