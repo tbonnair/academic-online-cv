@@ -16,7 +16,7 @@ math: true
   The type of objects we are interested in are hence square matrices $\boldsymbol{M} \in \mathbb{R}^{N \times N}$ where each element $m_{ij}$ is a random variable. An example of such a matrix is reproduced in the figure below where $N=100$ and $m_{ij} = m_{ji}$ are drawn from a centred Gaussian distribution of variance $1/N$, noted $\mathcal{N}(0, 1)$ with twice the variance on the diagonal, meaning that each pixel that you see is a realisation of a Gaussian variable. As can be intuited and appreciated visually, there is no particular pattern since each element is an independant realisation of all others.
 
   <p align="center">
-  <img src="https://github.com/tbonnair/academic-online-cv/blob/master/content/Courses/GOE/random_matrix_example.png?raw=true" alt="fig:random_matrix" width="500"
+  <img src="https://github.com/tbonnair/academic-online-cv/blob/master/content/Posts/GOE/random_matrix_example.png?raw=true" alt="fig:random_matrix" width="500"
   </p>
 
 
@@ -226,7 +226,7 @@ From this, we can re-write the square root of the distribution and compute easil
 This is finally done! We derived together the famous Wigner semi-circle law. Our derivation should be valid in the large dimension $N$ limit and provide the exact asymptotic distribution of eigenvalues of individual matrices from the GOE. Let us see how this theoretical prediction is comparing to a numerical simulation. The comparison is shown below where the red line is our theoretical prediction and the histogram is the density estimation of a single matrix with $N=2000$. We see a pretty good agreement between the two, even if $N$ is not properly infinite in the simulation!
 
 <p align="center">
-  <img src="https://github.com/tbonnair/academic-online-cv/blob/master/content/Courses/GOE/GOE_Wigner_semi_circle.png?raw=true  " alt="fig:GOE_Wigner" width="500"
+  <img src="https://github.com/tbonnair/academic-online-cv/blob/master/content/Posts/GOE/GOE_Wigner_semi_circle.png?raw=true  " alt="fig:GOE_Wigner" width="500"
   </p>
 
 
