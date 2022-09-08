@@ -128,7 +128,7 @@ Let us do it term by term:
    $$
    \mathbb{E}(a_{11}) = \mathbb{E}(z - m_{11}) = z,
    $$
-   since $M_{11}$ is a centred Gaussian random variable.
+   since $m_{11}$ is a centred Gaussian random variable.
 
 3) Finally, let us decompose the last term as
    $$
@@ -139,9 +139,9 @@ Let us do it term by term:
    Since the elements of the first row and column are independant from other elements in the Wigner ensemble, we obtain
    $$
    \begin{align}
-   \mathbb{E}( a_{1i} (\boldsymbol{A}_{22}^{-1})_{ij} \boldsymbol{a}_{j1}) &= \mathbb{E}(a_{1i} a_{j1}) \, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}), \\\\\\
-   &= \mathbb{E}(x_{1i} x_{j1}) \, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}), \\\\\\
-   &= \frac{1}{N} \delta_{ij} \, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}).
+   \mathbb{E}( a_{1i} (\boldsymbol{A}_{22}^{-1})_{ij} \boldsymbol{a}_{j1}) &= \mathbb{E}(a_{1i} a_{j1}) \\, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}), \\\\\\
+   &= \mathbb{E}(x_{1i} x_{j1}) \\, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}), \\\\\\
+   &= \frac{1}{N} \delta_{ij} \\, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}).
    \end{align}
    $$
    This gives us for the full sum
