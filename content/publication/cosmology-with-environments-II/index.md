@@ -19,6 +19,6 @@ image:
   preview_only: false
   caption: Improvement factors of the several studied statistics over the redshift-space matter monopole + quadrupole constraints for each of the six cosmological parameters at kmax = 0.5 h/Mpc. The horizontal black line shows the unity improvement. Note that these statistics exclude the combination with the matter multipoles and concern uniquely the several cosmic web environments and their combination.
 date: 2022-12-13T00:59:55.824Z
-summary: This paper exposes the reachable accuracies of the redshift-space constraints provided by the several environments of the cosmic web with respect to the matter monopole and quadrupole statistics. By splitting the density field into its cosmic web components, one can tighten down the constraints by factors up to 5.5 for the summed neutrino mass.
+summary: <p align="justify">This paper exposes the reachable accuracies of the redshift-space constraints provided by the several environments of the cosmic web with respect to the matter monopole and quadrupole statistics. By splitting the density field into its cosmic web components, one can tighten down the constraints by factors up to 5.5 for the summed neutrino mass.</p>
 ---
 
