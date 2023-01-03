@@ -38,7 +38,7 @@ experience:
     location: Paris, France
     date_start: '2021-11-01'
     date_end: '2022-01-03'
-    description: 'Statistical physics models for machine learning.'
+    description: '<p align="justify">Applying statistical physics models for the understanding of machine learning algorithms.</p>'
     
   - title: Ph.D. Student
     company: IAS, Université Paris-Saclay
@@ -47,7 +47,7 @@ experience:
     location: Orsay, France
     date_start: '2017-09-01'
     date_end: '2021-11-01'
-    description: 'Cosmic web environments: identification, characterisation and quantification of cosmological information.'
+    description: '<p align="justify">Cosmic web environments: identification, characterisation and quantification of cosmological information.</p>'
         
   - title: Research Engineer
     company: Thales
@@ -56,7 +56,7 @@ experience:
     location: Élancourt, France
     date_start: '2016-09-01'
     date_end: '2017-09-01'
-    description: Conception and development of an unsupervised algorithm to deinterleave radar pulses emitted by satellites.
+    description: '<p align="justify">Conception and development of unsupervised algorithms to deinterleave radar pulses captured by satellites.</p>'
 design:
   columns: '2'
 ---
