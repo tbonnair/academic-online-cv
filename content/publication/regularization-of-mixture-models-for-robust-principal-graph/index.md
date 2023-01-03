@@ -32,7 +32,7 @@ publication_short: ""
 url_source: ""
 url_video: ""
 publication: In IEEE Transactions on Pattern Analysis and Machine Intelligence
-featured: true
+featured: false
 date: 2021-11-04T15:48:10.892Z
 url_slides: ""
 title: " Regularization of Mixture Models for Robust Principal Graph Learning"

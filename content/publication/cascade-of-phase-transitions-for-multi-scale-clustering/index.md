@@ -21,7 +21,7 @@ authors:
   - Nabila Aghanim
 publication: In Physical Review E
 publication_short: ""
-featured: true
+featured: false
 image:
   filename: featured.png
   focal_point: Smart
