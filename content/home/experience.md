@@ -56,7 +56,7 @@ experience:
     location: Élancourt, France
     date_start: '2016-09-01'
     date_end: '2017-09-01'
-    description: '<p align="justify">Conception and development of unsupervised algorithms to deinterleave radar pulses captured by satellites.</p>'
+    description: '<p align="justify">Conception and development of unsupervised algorithms to deinterleave radar pulses collected by satellites.</p>'
 design:
   columns: '2'
 ---
