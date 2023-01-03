@@ -12,7 +12,7 @@ authors:
   - Aurélien Decelle
 publication: Submitted to Astronomy & Astrophysics
 publication_short: ""
-featured: false
+featured: true
 image:
   filename: featured.png
   focal_point: Smart
