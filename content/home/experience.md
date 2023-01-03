@@ -22,14 +22,23 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Fellow researcher
+    company: ENS, Université PSL,
+    company_url: ''
+    company_logo: ''
+    location: Paris, France
+    date_start: '2022-01-04'
+    date_end: ''
+    description: 'AI for physics and physics for AI: application and use of AI tools for astrophysics and cosmology, development of theoretical physics methodologies for a better understanding of AI systems. Teaching duties at PSL under the data program.'
+
   - title: Postdoctoral researcher
     company: ENS, Université PSL,
     company_url: ''
     company_logo: ''
     location: Paris, France
     date_start: '2021-11-01'
-    date_end: ''
-    description: 'Interface between statistical physics and machine learning.'
+    date_end: '2022-01-03'
+    description: 'Statistical physics models for machine learning.'
     
   - title: Ph.D. Student
     company: IAS, Université Paris-Saclay,
