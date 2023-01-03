@@ -1,5 +1,5 @@
 ---
-abstract: <p align="justify">Matter distribution around clusters is highly anisotropic because
+abstract: Matter distribution around clusters is highly anisotropic because
   clusters are the nodes of the cosmic web. The shape of the clusters and the
   number of filaments to which they are connected, that is, their connectivity,
   is thought to reflect their level of anisotropic matter distribution and must
@@ -22,7 +22,7 @@ abstract: <p align="justify">Matter distribution around clusters is highly aniso
   accretion and merging. In contrast, late-formed unrelaxed objects are highly
   anisotropic with strong connectivities and ellipticities. These groups and
   clusters are in their formation phase and must be strongly affected by the
-  infalling of materials from filaments.</p>
+  infalling of materials from filaments.
 draft: false
 url_pdf: https://arxiv.org/abs/2101.04686
 title: "Shape and connectivity of groups and clusters: Effect of the dynamical
@@ -43,12 +43,12 @@ image:
   caption: Evolution of Gaussian components during the annealing (upper panel) and
     two-dimensional diagram showing the successive phase transitions (lower
     panel).
-summary: <p align="justify">The way clusters are embedded in the cosmic web is linked with their
+summary: The way clusters are embedded in the cosmic web is linked with their
   intrinsic structure and dynamics. In this study, we carry an analysis of the
   links between the connectivity, the number of filaments a cluster is connected
   to, and their shape and dynamics (ellipticity, accretion rate etc.). In
   particular, we report a correlation between the connectivity and the assembly
   history of clusters with young and perturbed clusters being more connected
-  than the old and relaxed ones.</p>
+  than the old and relaxed ones.
 date: 2021-01-12T21:17:16.713Z
 ---

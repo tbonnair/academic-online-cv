@@ -1,5 +1,5 @@
 ---
-abstract: <p align="justify">The late-time matter distribution depicts a complex pattern commonly
+abstract: The late-time matter distribution depicts a complex pattern commonly
   called the cosmic web. In this picture, the spatial arrangement of matter is
   that of dense anchors, the nodes, linked together by elongated bridges of
   matter, the filaments, found at the intersection of thin mildly-dense walls,
@@ -37,7 +37,7 @@ abstract: <p align="justify">The late-time matter distribution depicts a complex
   walls and voids). We show that they can break some degeneracies among key
   parameters of the model making them a suitable alternative probe to
   significantly improve the constraints on cosmological parameters obtained by
-  standard analyses.</p>
+  standard analyses.
 slides: ""
 url_pdf: http://www.theses.fr/2021UPASP068
 publication_types:
