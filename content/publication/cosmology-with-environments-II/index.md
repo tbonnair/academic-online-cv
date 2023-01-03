@@ -4,7 +4,7 @@ Following-upon these results, we propose to study the achievable constraints of 
 url_pdf: https://arxiv.org/abs/2212.06838
 title: Cosmology with cosmic web environments II. Redshift-space auto and cross power spectra
 publication_types:
-  - "7"
+  - "2"
 authors:
   - admin
   - Joseph Kuruvilla
@@ -12,7 +12,7 @@ authors:
   - Aurélien Decelle
 publication: Submitted to Astronomy & Astrophysics
 publication_short: ""
-featured: true
+featured: false
 image:
   filename: featured.png
   focal_point: Smart
