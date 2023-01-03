@@ -1,7 +1,5 @@
 ---
-abstract: <p align="justify">Numerical simulations and observations show that galaxies are not uniformly
-  distributed in the universe but, rather, they are spread across a filamentary
-  structure. In this large-scale pattern, highly dense regions are linked
+abstract: <p align="justify">Numerical simulations and observations show that galaxies are not uniformly distributed in the universe but, rather, they are spread across a filamentary structure. In this large-scale pattern, highly dense regions are linked
   together by bridges and walls, all of them surrounded by vast, nearly-empty
   areas. While nodes of the network are widely studied in the literature,
   simulations indicate that half of the mass budget comes from a more diffuse

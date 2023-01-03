@@ -1,5 +1,5 @@
 ---
-abstract: <p align="justify"> We present a novel framework exploiting the cascade of phase
+abstract: <p align="justify">We present a novel framework exploiting the cascade of phase
   transitions occurring during a simulated annealing of the
   Expectation-Maximisation algorithm to cluster datasets with multi-scale
   structures. Using the weighted local covariance, we can extract, a posteriori
@@ -36,6 +36,6 @@ summary: <p align="justify">The task of clustering point-cloud data is nowadays 
   Gaussian Mixture Model to alleviate some of the drawbacks of the clustering
   task. In particular, it shows that we can explore the dataset to obtain
   several key information on the number of clusters, their size and how they are
-  embedded in space, even in high dimensions. </p>
+  embedded in space, even in high dimensions.</p>
 date: 2020-10-15T19:59:55.824Z
 ---

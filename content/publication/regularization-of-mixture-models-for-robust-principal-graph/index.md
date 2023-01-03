@@ -1,5 +1,5 @@
 ---
-abstract: <p align="justify"> A regularized version of Mixture Models is proposed to learn a
+abstract: <p align="justify">A regularized version of Mixture Models is proposed to learn a
   principal graph from a distribution of D-dimensional data points. In the
   particular case of manifold learning for ridge detection, we assume that the
   underlying manifold can be modeled as a graph structure acting like a
@@ -12,7 +12,7 @@ abstract: <p align="justify"> A regularized version of Mixture Models is propose
   the manifold sampling coherently with the graph structure. The method uses a
   graph prior given by the minimum spanning tree that we extend using random
   sub-samplings of the dataset to take into account cycles that can be observed
-  in the spatial distribution. </p>
+  in the spatial distribution.</p>
 slides: ""
 url_pdf: https://arxiv.org/abs/2106.09035
 publication_types:
