@@ -35,7 +35,7 @@ authors:
   - Nabila Aghanim
 publication: In Astronomy and Astrophysics
 publication_short: ""
-featured: false
+featured: true
 image:
   filename: featured.png
   focal_point: Smart

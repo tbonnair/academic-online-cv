@@ -52,7 +52,7 @@ publication_short: ""
 url_source: ""
 url_video: ""
 publication: ""
-featured: false
+featured: true
 date: 2021-10-23T20:42:39.196Z
 url_slides: ""
 title: " Cosmic web environments : identification, characterisation, and
