@@ -21,10 +21,10 @@ authors:
   - admin
   - Aurélien Decelle
   - Nabila Aghanim
-summary: The extraction of patterns from spatially structured point-cloud
+summary: <p align="justify">The extraction of patterns from spatially structured point-cloud
   datasets is ubiquitous in many fields of science. In this work, we address the
   case of extracting one-dimensional structure from such data by formulating the
-  problems in terms of a regularised version of a mixture model.
+  problems in terms of a regularised version of a mixture model.</p>
 url_dataset: ""
 url_project: ""
 author_notes: []
