@@ -23,16 +23,16 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Fellow researcher
-    company: ENS, Université PSL,
+    company: ENS, Université PSL
     company_url: ''
     company_logo: ''
     location: Paris, France
     date_start: '2022-01-04'
     date_end: ''
-    description: 'AI for physics and physics for AI: application and use of AI tools for astrophysics and cosmology, development of theoretical physics methodologies for a better understanding of AI systems. Teaching duties at PSL under the data program.'
+    description: '<p align="justify">AI for physics and physics for AI: application and use of AI tools for astrophysics and cosmology, development of theoretical physics methodologies for a better understanding of AI systems. Teaching duties at PSL under the data program.</p>'
 
   - title: Postdoctoral researcher
-    company: ENS, Université PSL,
+    company: ENS, Université PSL
     company_url: ''
     company_logo: ''
     location: Paris, France
@@ -41,7 +41,7 @@ experience:
     description: 'Statistical physics models for machine learning.'
     
   - title: Ph.D. Student
-    company: IAS, Université Paris-Saclay,
+    company: IAS, Université Paris-Saclay
     company_url: ''
     company_logo: ''
     location: Orsay, France
