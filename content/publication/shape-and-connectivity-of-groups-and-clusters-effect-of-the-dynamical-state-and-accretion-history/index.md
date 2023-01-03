@@ -1,5 +1,5 @@
 ---
-abstract: Matter distribution around clusters is highly anisotropic because
+abstract: "Matter distribution around clusters is highly anisotropic because
   clusters are the nodes of the cosmic web. The shape of the clusters and the
   number of filaments to which they are connected, that is, their connectivity,
   is thought to reflect their level of anisotropic matter distribution and must
@@ -22,7 +22,7 @@ abstract: Matter distribution around clusters is highly anisotropic because
   accretion and merging. In contrast, late-formed unrelaxed objects are highly
   anisotropic with strong connectivities and ellipticities. These groups and
   clusters are in their formation phase and must be strongly affected by the
-  infalling of materials from filaments.
+  infalling of materials from filaments."
 draft: false
 url_pdf: https://arxiv.org/abs/2101.04686
 title: "Shape and connectivity of groups and clusters: Effect of the dynamical
