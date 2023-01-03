@@ -5,7 +5,7 @@ weight: 90
 title: Latest posts
 subtitle: null
 content:
-  page_type: event
+  page_type: posts
   count: 5
   filters:
     author: ""
