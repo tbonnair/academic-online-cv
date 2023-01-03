@@ -7,7 +7,7 @@ abstract: <p align="justify">Matter distribution around clusters is highly aniso
   effect of the dynamical state and the formation history on both the morphology
   and local connectivity of about 2400 groups and clusters of galaxies from the
   large hydrodynamical simulation IllustrisTNG at z = 0. We find that the mass
-  of groups and clusters mainly affects the geometry of the matter distribution:
+  of groups and clusters mainly affects the geometry of the matter distribution":"
   Massive halos are significantly more elliptical and are more strongly
   connected to the cosmic web than low-mass halos. Beyond the mass-driven
   effect, ellipticity and connectivity are correlated and are imprints of the
