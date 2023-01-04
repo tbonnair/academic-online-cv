@@ -217,8 +217,8 @@ $$
 &= \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+}  \mathrm{Im} \\, \frac{-\lambda - i\epsilon + \sqrt{\lambda^2 - \epsilon^2 - 4 +2i\lambda \epsilon} }{2}, \\\\\\
 &=
 \begin{cases}
-0, & \mathrm{if} \; |\lambda| > 2, \\\\\\
-\frac{1}{2\pi} \sqrt{4-\lambda^2}, & \mathrm{if} \; |\lambda| < 2,
+0, & \mathrm{if }|\lambda| > 2, \\\\\\
+\frac{1}{2\pi} \sqrt{4-\lambda^2}, & \mathrm{if }|\lambda| < 2,
 \end{cases}
 \end{align}
 $$
