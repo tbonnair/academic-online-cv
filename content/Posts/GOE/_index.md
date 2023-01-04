@@ -156,11 +156,10 @@ Let us do it term by term:
    &= \frac{1}{N} \delta_{ij} \\, \mathbb{E}((\boldsymbol{A}_{22}^{-1})_{ij}).
    \end{align}
    $$
-   <p align="justify">This gives us for the full sum</p>
    
-   $$
-   \mathbb{E}(\boldsymbol{A}_{12} \boldsymbol{A}_{22} \boldsymbol{A}_{21}) = \frac{1}{N} \mathbb{E}(\boldsymbol{A}_{22}^{-1}).
-   $$
+   
+   <p align="justify">This gives us for the full sum $\mathbb{E}(\boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21}) = \frac{1}{N} \mathbb{E}(\boldsymbol{A}_{22}^{-1}).$ </p>
+   
    <p align="justify">From our previous observation, we know however that $\boldsymbol{A}_{22}$ is a Wigner matrix itself of size $(N-1) \times (N-1)$. This means that we have</p>
    
    $$
