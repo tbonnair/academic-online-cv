@@ -11,20 +11,21 @@ math: true
 
 ## Random matrices and the Gaussian orthogonal ensemble
 
-  Simply put, a random matrix is a matrix whose elements are random variables. Random matrices are key objects naturally arising in several fields of science from physics, machine learning and chemistry to finance and ecology. In physics, it was introduced in the 1950s by Wigner who linked the statistics of the spacing between energy levels of atoms to the spacing between eigenvalues of a random matrix. Since then, random matrices appeared (and keep appearing) ubiquitously in diverse thematic of theoretical physics like quantum chromo-dynamics, spin-glasses, string theory, etc.
+<p align="justify">Simply put, a random matrix is a matrix whose elements are random variables. Random matrices are key objects naturally arising in several fields of science from physics, machine learning and chemistry to finance and ecology. In physics, it was introduced in the 1950s by Wigner who linked the statistics of the spacing between energy levels of atoms to the spacing between eigenvalues of a random matrix. Since then, random matrices appeared (and keep appearing) ubiquitously in diverse thematic of theoretical physics like quantum chromo-dynamics, spin-glasses, string theory, etc.</p>
 
-  The type of objects we are interested in are hence square matrices $\boldsymbol{M} \in \mathbb{R}^{N \times N}$ where each element $m_{ij}$ is a random variable. An example of such a matrix is reproduced in the figure below where $N=100$ and $m_{ij} = m_{ji}$ are drawn from a centred Gaussian distribution of variance $1/N$, noted $\mathcal{N}(0, 1)$ with twice the variance on the diagonal, meaning that each pixel that you see is a realisation of a Gaussian variable. As can be intuited and appreciated visually, there is no particular pattern since each element is an independant realisation of all others.
+<p align="justify">The type of objects we are interested in are hence square matrices $\boldsymbol{M} \in \mathbb{R}^{N \times N}$ where each element $m_{ij}$ is a random variable. An example of such a matrix is reproduced in the figure below where $N=100$ and $m_{ij} = m_{ji}$ are drawn from a centred Gaussian distribution of variance $1/N$, noted $\mathcal{N}(0, 1)$ with twice the variance on the diagonal, meaning that each pixel that you see is a realisation of a Gaussian variable. As can be intuited and appreciated visually, there is no particular pattern since each element is an independant realisation of all others.</p>
 
   <p align="center">
   <img src="https://github.com/tbonnair/academic-online-cv/blob/master/content/Posts/GOE/random_matrix_example.png?raw=true" alt="fig:random_matrix" width="500"
   </p>
 
 
-Mathematically, we can write that
+<p align="justify">Mathematically, we can write that
+
 $$
 \boldsymbol{M} = \frac{\boldsymbol{J} + \boldsymbol{J}^\mathrm{T}}{\sqrt{2N}},
 $$
-where we added $N$ to normalize the matrix and $\boldsymbol{J}$ is a random matrix with $j_{ij} \sim \mathcal{N}(0,1)$. Such matrices are called Gaussian Wigner matrices and belong to the Gaussian orthogonal ensemble (GOE) because their symmetry makes them invariant under orthogonal transformations.
+where we added $N$ to normalize the matrix and $\boldsymbol{J}$ is a random matrix with $j_{ij} \sim \mathcal{N}(0,1)$. Such matrices are called Gaussian Wigner matrices and belong to the Gaussian orthogonal ensemble (GOE) because their symmetry makes them invariant under orthogonal transformations.</p>
   {{< spoiler text="Why is that important?" style="color: grey">}}
   Many results of random matrix theory are derived by relying on one of the following assumption: i) the entries of the matrix are independant; ii) the matrix is invariant under some transformations (orthogonal in real case or unitary in complex case). These are, grossly speaking, the two cases in which the existing mathematical tools allow to study the random matrices in details from an analytical perspective.
   The type of matrix we have built just before, with Gaussian independant entries, is a very particular case since it belongs to the two families described here: it is a matrix with independant entries but is also invariant under orthogonal transformations. In fact, the GOE is the only ensemble fulfilling simultaneously these two conditions.

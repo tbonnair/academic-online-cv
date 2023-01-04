@@ -17,7 +17,7 @@ image:
   focal_point: Smart
   preview_only: false
   caption: Power spectra computed in the different environments and for the matter. We see different shape dependencies, amplitudes, etc. that can be used to improve the constraints on cosmological parameters.
-summary: This work aims at extracting the cosmological information content of the several cosmic web environments. While we know that the matter power spectrum is not containing all the information about hte underlying cosmological model, we can wonder wether the environments are enclosing different types of information that one can use to break some of the degeneracies among parameters of the model. In particular, we show that a simple two-point correlator becomes sensitive to higher-order features when we have a look at the environments instead of the full matter distribution.
+summary: <p align="justify">This work aims at extracting the cosmological information content of the several cosmic web environments. While we know that the matter power spectrum is not containing all the information about hte underlying cosmological model, we can wonder wether the environments are enclosing different types of information that one can use to break some of the degeneracies among parameters of the model. In particular, we show that a simple two-point correlator becomes sensitive to higher-order features when we have a look at the environments instead of the full matter distribution.</p>
 date: 2021-12-09T00:59:55.824Z
 ---
 
