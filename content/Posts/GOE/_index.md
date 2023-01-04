@@ -20,17 +20,17 @@ math: true
   </p>
 
 
-<p align="justify">Mathematically, we can write that
-
+Mathematically, we can write that
 $$
 \boldsymbol{M} = \frac{\boldsymbol{J} + \boldsymbol{J}^\mathrm{T}}{\sqrt{2N}},
 $$
-where we added $N$ to normalize the matrix and $\boldsymbol{J}$ is a random matrix with $j_{ij} \sim \mathcal{N}(0,1)$. Such matrices are called Gaussian Wigner matrices and belong to the Gaussian orthogonal ensemble (GOE) because their symmetry makes them invariant under orthogonal transformations.</p>
+<p align="justify">where we added $N$ to normalize the matrix and $\boldsymbol{J}$ is a random matrix with $j_{ij} \sim \mathcal{N}(0,1)$. Such matrices are called Gaussian Wigner matrices and belong to the Gaussian orthogonal ensemble (GOE) because their symmetry makes them invariant under orthogonal transformations.</p>
   {{< spoiler text="Why is that important?" style="color: grey">}}
-  Many results of random matrix theory are derived by relying on one of the following assumption: i) the entries of the matrix are independant; ii) the matrix is invariant under some transformations (orthogonal in real case or unitary in complex case). These are, grossly speaking, the two cases in which the existing mathematical tools allow to study the random matrices in details from an analytical perspective.
-  The type of matrix we have built just before, with Gaussian independant entries, is a very particular case since it belongs to the two families described here: it is a matrix with independant entries but is also invariant under orthogonal transformations. In fact, the GOE is the only ensemble fulfilling simultaneously these two conditions.
+  <p align="justify">Many results of random matrix theory are derived by relying on one of the following assumption: i) the entries of the matrix are independant; ii) the matrix is invariant under some transformations (orthogonal in real case or unitary in complex case). These are, grossly speaking, the two cases in which the existing mathematical tools allow to study the random matrices in details from an analytical perspective.
+    The type of matrix we have built just before, with Gaussian independant entries, is a very particular case since it belongs to the two families described here: it is a matrix with independant entries but is also invariant under orthogonal transformations. In fact, the GOE is the only ensemble fulfilling simultaneously these two conditions.</p>
 
-  While independance of the entries is straightforward to see, the invariance under orthogonal transformation can be deduced when writing the probability measure associated with the ensemble as
+<p align="justify">While independance of the entries is straightforward to see, the invariance under orthogonal transformation can be deduced when writing the probability measure associated with the ensemble as</p>
+
 $$
 \begin{align}
 p(M) &= \exp\left(\frac{-N\sum_{i \neq j}^N m_{ij}^2}{4} - \frac{N\sum_{i=1}^N m_{ii}^2}{4} \right) \\\\\\
@@ -38,40 +38,45 @@ p(M) &= \exp\left(\frac{-N\sum_{i \neq j}^N m_{ij}^2}{4} - \frac{N\sum_{i=1}^N m
 &= \exp\left(\frac{-N}{4} \mathrm{Tr} \boldsymbol{M}^2 \right),
 \end{align}
 $$
-where $\mathrm{Tr} \boldsymbol{M}$ designates the trace of the matrix $M$ (i.e. the sum of its diagonal elements). We hence see that if we take $\boldsymbol{M}^\prime = \boldsymbol{O} \boldsymbol{M} \boldsymbol{O}^{\mathrm{T}}$ with $\boldsymbol{O}$ an orthogonal matrix, the measure remains unchanged.
+<p align="justify">where $\mathrm{Tr} \boldsymbol{M}$ designates the trace of the matrix $M$ (i.e. the sum of its diagonal elements). We hence see that if we take $\boldsymbol{M}^\prime = \boldsymbol{O} \boldsymbol{M} \boldsymbol{O}^{\mathrm{T}}$ with $\boldsymbol{O}$ an orthogonal matrix, the measure remains unchanged.</p>
 
   {style="color: grey"}
   {{< /spoiler >}}
 
-  The first thing one wants to have a look at when dealing with a matrix are its eigenvalues that are linked with many properties of the system the matrix represents such as the stability of a dynamical system or the energy levels of vibrating atoms. As a reminder, the eigenvalues $\lambda_i$ of a matrix are defined as the factors multiplying the directions that remain unchanged by application of the matrix $\boldsymbol{M}$ (the so-called eigenvectors $\boldsymbol{v}_{i}$),
+<p align="justify">The first thing one wants to have a look at when dealing with a matrix are its eigenvalues that are linked with many properties of the system the matrix represents such as the stability of a dynamical system or the energy levels of vibrating atoms. As a reminder, the eigenvalues $\lambda_i$ of a matrix are defined as the factors multiplying the directions that remain unchanged by application of the matrix $\boldsymbol{M}$ (the so-called eigenvectors $\boldsymbol{v}_{i}$),</p>
+
 $$
 \boldsymbol{M} \boldsymbol{v}_i = \lambda_i \boldsymbol{v}_i.
 $$
-  For our matrix $\boldsymbol{M}$, we hence have $N$ eigenvalues that we order ascendingly as $\lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_N$.
+  <p align="justify">For our matrix $\boldsymbol{M}$, we hence have $N$ eigenvalues that we order ascendingly as $\lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_N$.
   A generic question that one may ask is ''How are the eigenvalues of the random matrix at hand distributed?''. This question is actually at the heart of random matrix theory and mathematicians have developped several tools allowing to answer it.
-  Our goal for the next few sections is to introduce these tools, use it to compute analytically the distribution of eigenvalues of our matrix $\boldsymbol{M}$ above and compare it with numerical simulations.
+    Our goal for the next few sections is to introduce these tools, use it to compute analytically the distribution of eigenvalues of our matrix $\boldsymbol{M}$ above and compare it with numerical simulations.</p>
 
 
 ## Stieltjes transform and eigenvalue distribution
 
-  The **Stieltjes transform** is a crucial element of random matrix theory that provides information on the moments of the random matrix and the density of eigenvalues. It is defined as
+<p align="justify">The **Stieltjes transform** is a crucial element of random matrix theory that provides information on the moments of the random matrix and the density of eigenvalues. It is defined as</p>
+
 $$
 g_{\boldsymbol{M}}(z) = \frac{1}{N} \sum_{i=1}^N \frac{1}{z - \lambda_i},  \label{eq:Stieltjes_def}\tag{1}
 $$
-  for $z$ in the complexe plane excluding the eigenvalues $\lambda_i$. 
-  The Stieltjes transform can be written matricially as the normalised trace of some matrix $\boldsymbol{G}_{\boldsymbol{M}} = (z\boldsymbol{I} - M)^{-1}$ called the resolvent of $\boldsymbol{M}$,
+  <p align="justify">for $z$ in the complexe plane excluding the eigenvalues $\lambda_i$. 
+    The Stieltjes transform can be written matricially as the normalised trace of some matrix $\boldsymbol{G}_{\boldsymbol{M}} = (z\boldsymbol{I} - M)^{-1}$ called the resolvent of $\boldsymbol{M}$,</p>
+
 $$
 g_{\boldsymbol{M}} = \frac{1}{N} \mathrm{Tr} \\, {\boldsymbol{G}_\boldsymbol{M}}.
 $$
-  The two formulations are equivalent and the knowledge of $\boldsymbol{G}_{\boldsymbol{M}}$ implies the one of the Stieltjes transform (note however that the reciprocal is not true).
+<p align="justify">The two formulations are equivalent and the knowledge of $\boldsymbol{G}_{\boldsymbol{M}}$ implies the one of the Stieltjes transform (note however that the reciprocal is not true).</p>
 
-  With this definition, we directly see that the eigenvalues of $\boldsymbol{M}$ are linked in a very particular way to the Stieltjes transform since they cancel out the denominator and are hence excluded from the interval of definition of $g_{\boldsymbol{M}}$.
-  Mathematicians formulated this idea through the Sokhotski–Plemelj formula that links the density of eigenvalues $\rho(\lambda)$ and the Stieltjes transform as
+  <p align="justify">With this definition, we directly see that the eigenvalues of $\boldsymbol{M}$ are linked in a very particular way to the Stieltjes transform since they cancel out the denominator and are hence excluded from the interval of definition of $g_{\boldsymbol{M}}$.
+    Mathematicians formulated this idea through the Sokhotski–Plemelj formula that links the density of eigenvalues $\rho(\lambda)$ and the Stieltjes transform as</p>
+
 $$
 \rho(\lambda) = \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+} \mathrm{Im} \\, \mathcal{g}(\lambda - i\epsilon).  \label{eq:Stieltjes_inverse}\tag{2}
 $$
-  This formula may look scary at first sight but let's decompose it. It says that the density of eigenvalues can be obtained by evaluating the Stieltjes transform at a precise complex number that is $\lambda - i \epsilon$ with a very small $\epsilon$. This makes sense because we have seen before that the Stieltjes transform is not defined at eigenvalues $\lambda$ but taking it slightly away along the complex axis is authorized. Why not along the real axis you may ask? Well, if we consider the eigenvalue density as a continuum, then "slightly away" from $\lambda_i$ on the real axis is $\lambda_j$, another eigenvalue at which we cannot evaluate the Stieltjes transform. However, since in our case the matrix is symetric, all the eigenvalues are real and along the complex axis, we are not bothered by other eigenvalues and the Stieltjes transform is well defined.
-  Let us now have a look at the imaginary part of this quantity 
+<p align="justify">This formula may look scary at first sight but let's decompose it. It says that the density of eigenvalues can be obtained by evaluating the Stieltjes transform at a precise complex number that is $\lambda - i \epsilon$ with a very small $\epsilon$. This makes sense because we have seen before that the Stieltjes transform is not defined at eigenvalues $\lambda$ but taking it slightly away along the complex axis is authorized. Why not along the real axis you may ask? Well, if we consider the eigenvalue density as a continuum, then "slightly away" from $\lambda_i$ on the real axis is $\lambda_j$, another eigenvalue at which we cannot evaluate the Stieltjes transform. However, since in our case the matrix is symetric, all the eigenvalues are real and along the complex axis, we are not bothered by other eigenvalues and the Stieltjes transform is well defined.
+  Let us now have a look at the imaginary part of this quantity </p>
+
 $$
 \mathrm{Im} \, \mathcal{g}(\lambda - i\epsilon) = \frac{1}{N} \sum_k \frac{\epsilon}{\left(\lambda - \lambda_k\right)^2 + \epsilon^2},
 $$
@@ -83,11 +88,12 @@ $$
 &= \pi \rho(\lambda)
 \end{align}
 $$
- where $\delta(x)$ denotes the Dirac delta distribution and where we used the alternative definition $\delta(x) = \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+} \frac{\epsilon}{x^2 + \epsilon^2}$.
+<p align="justify">where $\delta(x)$ denotes the Dirac delta distribution and where we used the alternative definition $\delta(x) = \frac{1}{\pi} \operatorname*{lim}_{\epsilon \rightarrow 0^+} \frac{\epsilon}{x^2 + \epsilon^2}$.</p>
 
 ## Eigenvalue distribution of the GOE: the Wigner semi-circle law
 
-Equipped with the Stieltjes transform and its inverse transform, we are now interested in mathematically describing the eigenvalue distribution of the GOE. We know from the previous section that the first thing we need to compute is the Stieltjes transform of $\boldsymbol{M}$. It turns out that the expected value of $g_{\boldsymbol{M}}$, denoted $g$, satisfies a pretty simple equation in this case which is
+<p align="justify">Equipped with the Stieltjes transform and its inverse transform, we are now interested in mathematically describing the eigenvalue distribution of the GOE. We know from the previous section that the first thing we need to compute is the Stieltjes transform of $\boldsymbol{M}$. It turns out that the expected value of $g_{\boldsymbol{M}}$, denoted $g$, satisfies a pretty simple equation in this case which is</p>
+
 $$
 g - zg + 1 = 0,  \label{eq:resolvent_eq_GOE}\tag{3}
 $$
@@ -98,9 +104,10 @@ $$
 
 {{< spoiler text="How to derive this expression?" style="color: grey">}}
 
-There are different ways to compute the resolvent matrix $\boldsymbol{G}$ coming from physics (in which context it is called a Green function) or mathematics to then derive the Stieltjes transform which corresponds to its trace. We expose here a brute-force computation relying on some results from mathematics and we will see in a further post how to come up with the same result based on tools coming from theoretical physics. 
+<p align="justify">There are different ways to compute the resolvent matrix $\boldsymbol{G}$ coming from physics (in which context it is called a Green function) or mathematics to then derive the Stieltjes transform which corresponds to its trace. We expose here a brute-force computation relying on some results from mathematics and we will see in a further post how to come up with the same result based on tools coming from theoretical physics. </p>
 
-We first make use of the rotational invariance of the problem as we saw earlier and can hence compute the element $g_{11}$ of the resolvent and then use the fact that $g_{\boldsymbol{M}} = \frac{1}{N} g_{11}$. To do so, we decompose the input matrix $\boldsymbol{A} = z\boldsymbol{I} - \boldsymbol{M}$ into four blocks
+<p align="justify">We first make use of the rotational invariance of the problem as we saw earlier and can hence compute the element $g_{11}$ of the resolvent and then use the fact that $g_{\boldsymbol{M}} = \frac{1}{N} g_{11}$. To do so, we decompose the input matrix $\boldsymbol{A} = z\boldsymbol{I} - \boldsymbol{M}$ into four blocks</p>
+
 $$
 \boldsymbol{A} = 
   \begin{pmatrix}
@@ -108,13 +115,14 @@ $$
   \boldsymbol{A}_{21} & \boldsymbol{A}_{22}
   \end{pmatrix},
 $$
-where $a_11$ is the scalar entry $(1,1)$ of the matrix, $\boldsymbol{A}_{12}$ and $\boldsymbol{A}_{21}$ are vectors excluding the first element and $\boldsymbol{A}_{22}$ is a $(N-1)\times (N-1)$ matrix.
+<p align="justify">where $a_11$ is the scalar entry $(1,1)$ of the matrix, $\boldsymbol{A}_{12}$ and $\boldsymbol{A}_{21}$ are vectors excluding the first element and $\boldsymbol{A}_{22}$ is a $(N-1)\times (N-1)$ matrix.</p>
 
-Inspecting the elements of this matrix, we first remark that $a_{11} = z - m_{11}$ and $\boldsymbol{A}_{12} = -\boldsymbol{M}_{12}$ since $z$ is only acting on the diagonal. The last remark is that $\boldsymbol{A}_{22}$ is in fact the inverse resolvent matrix of a Wigner matrix of size $N-1$. From this decomposition, we can use the Schur complement formula, to compute the first element of the inverse of $\boldsymbol{A}$, i.e. $g_{11}$. This goes as
+<p align="justify">Inspecting the elements of this matrix, we first remark that $a_{11} = z - m_{11}$ and $\boldsymbol{A}_{12} = -\boldsymbol{M}_{12}$ since $z$ is only acting on the diagonal. The last remark is that $\boldsymbol{A}_{22}$ is in fact the inverse resolvent matrix of a Wigner matrix of size $N-1$. From this decomposition, we can use the Schur complement formula, to compute the first element of the inverse of $\boldsymbol{A}$, i.e. $g_{11}$. This goes as</p>
+
 $$
 g_{11} = \frac{1}{a_{11} - \boldsymbol{A}_{12} \boldsymbol{A}_{22}^{-1} \boldsymbol{A}_{21}}
 $$
-Now, we need to take the expectation of this equation over the random variables $m_{ij}$. 
+<p align="justify">Now, we need to take the expectation of this equation over the random variables $m_{ij}$. </p>
 
 Let us do it term by term:
 
