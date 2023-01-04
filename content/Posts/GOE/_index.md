@@ -3,7 +3,7 @@ title: A first step in random matrix theory
 linkTitle: A first step in random matrix theory
 summary: A first introduction to some basic ideas of random matrix theory
 date: '2022-08-17'
-widget: blank
+type: book
 math: true
 font_size: M
 ---
