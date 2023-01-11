@@ -6,7 +6,20 @@ date: '2022-08-17'
 type: book
 math: true
 font_size: M
+
+share: true
+categories: ["Random matrix", "Theory", "Medium"]
+commentable: true
+profile: true
+reading_time: true
+show_related: true
+show_breadcrumb: true
+header:
+  navbar:
+    enable: false
 ---
+
+
 
 <p align="justify"> <strong>Preliminary remark:</strong> Over the past decade, the random matrix community provided plenty of relevant and interesting resources for the in-depth study of theoretical concepts. Some of these can be found in <a href="https://terrytao.wordpress.com/category/teaching/254a-random-matrices/">Terrence Tao's blog</a> or in several books on the topic like <a href="https://www.cambridge.org/core/books/first-course-in-random-matrix-theory/2292A554A9BB9E2A4697C35BCE920304">A first course in random matrix theory</a>. The aim of this page is to give someone with basic knowledge in mathematics and/or physics some first ideas of what random matrix theory is about and the fundamental tools used to describe them, without going into deep details and heavy formalism that you can easily find in many references. The introduction of these tools will also be useful for a further lesson introducing the use of statistical physics for understanding machine learning.</p>
 
