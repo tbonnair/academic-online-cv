@@ -12,6 +12,11 @@ url_pdf: https://arxiv.org/abs/1912.00732
 title: "T-ReX: a graph-based filament detection method"
 publication_types:
   - "2"
+links:
+  - icon_pack: fab
+  - icon: code
+  - name: Code
+  - url: 'https://git.ias.u-psud.fr/tbonnair/t-rex'
 authors:
   - admin
   - Nabila Aghanim
