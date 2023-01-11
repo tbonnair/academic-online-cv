@@ -2,7 +2,8 @@
 title: Posts
 type: page
 
-view: 3
+view: 5
+type: landing
 
 header:
   caption: ""
