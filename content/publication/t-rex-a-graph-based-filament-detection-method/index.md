@@ -13,7 +13,8 @@ title: "T-ReX: a graph-based filament detection method"
 publication_types:
   - "2"
 links:
-  -	name: Code
+  - icon_pack: fab
+    icon: code
     url: 'https://git.ias.u-psud.fr/tbonnair/t-rex'
 authors:
   - admin
