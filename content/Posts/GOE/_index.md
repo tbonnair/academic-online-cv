@@ -7,8 +7,15 @@ type: book
 math: true
 font_size: M
 
-categories: ["Random matrix", "Theory"]
-tags: ["Medium"]
+categories: ["Random matrix", "Theory", "Medium"]
+links:
+  - icon: code
+    name: Code
+    url: 'https://git.ias.u-psud.fr/tbonnair/t-rex'
+image:
+  filename: GOE_Wigner_semi_circle.png
+  focal_point: Smart
+  preview_only: false
 ---
 
 
