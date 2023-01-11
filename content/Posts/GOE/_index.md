@@ -6,14 +6,10 @@ date: '2022-08-17'
 type: book
 math: true
 font_size: M
+authors: ["admin"]
 
-share: true
 categories: ["Random matrix", "Theory"]
 tags: ["Medium"]
-commentable: true
-profile: true
-reading_time: true
-show_related: true
 ---
 
 
