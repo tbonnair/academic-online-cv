@@ -66,3 +66,19 @@ related:
       weight: 100
     - name: categories
       weight: 70
+
+
+cascade:
+  # Configure blog posts
+  - _target:
+      path: /posts/**
+    pager: true
+    editable: true
+    reading_time: true
+    commentable: true
+    show_related: true
+    show_breadcrumb: true
+    share: true
+    header:
+      navbar:
+        enable: false
