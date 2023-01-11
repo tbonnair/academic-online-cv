@@ -2,7 +2,7 @@
 title: Posts
 type: page
 
-view: Masonry
+view: 5
 
 header:
   caption: ""
