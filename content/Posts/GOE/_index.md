@@ -8,7 +8,8 @@ math: true
 font_size: M
 
 share: true
-categories: ["Random matrix", "Theory", "Medium"]
+categories: ["Random matrix", "Theory"]
+tags: ["Medium"]
 commentable: true
 profile: true
 reading_time: true
