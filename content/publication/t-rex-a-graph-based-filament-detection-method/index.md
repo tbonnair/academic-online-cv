@@ -14,7 +14,7 @@ publication_types:
   - "2"
 links:
   - icon_pack: fab
-    icon: code
+    icon: Code
     name: Code
     url: 'https://git.ias.u-psud.fr/tbonnair/t-rex'
 authors:
