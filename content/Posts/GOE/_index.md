@@ -8,6 +8,7 @@ math: true
 font_size: M
 
 categories: ["Random matrix", "Theory", "Medium"]
+featured: true
 image:
   filename: GOE_Wigner_semi_circle.png
   focal_point: Smart
