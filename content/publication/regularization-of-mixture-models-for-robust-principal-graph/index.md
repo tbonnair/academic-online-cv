@@ -17,6 +17,10 @@ slides: ""
 url_pdf: https://arxiv.org/abs/2106.09035
 publication_types:
   - "2"
+links:
+  - icon: code
+    name: Code
+    url: 'https://git.ias.u-psud.fr/tbonnair/t-rex'
 authors:
   - admin
   - Aurélien Decelle
