@@ -2,7 +2,7 @@
 title: Posts
 type: page
 
-view: 5
+view: Masonry
 type: landing
 
 header:
