@@ -92,9 +92,7 @@ $$
   \log p(\boldsymbol{X} | \boldsymbol{\Theta}) \geq L(q, \boldsymbol{\Theta}) = \sum_{\boldsymbol{Z}} q(\boldsymbol{Z}) \log \left[ \frac{p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta})}{q(\boldsymbol{Z})} \right].
 $$
 <p align="justify">Hence, the log-likelihood of the model is bounded below by $L(q, \boldsymbol{\Theta})$. If easier to handle, maximising this quantity could help maximising $\log p(\boldsymbol{X} | \boldsymbol{\Theta})$. We can re-write this lower-bound, using the normalisation of $q(\boldsymbol{Z})$ and the decomposition $p(\boldsymbol{X}, \boldsymbol{Z} | \boldsymbol{\Theta}) = p(\boldsymbol{Z} | \boldsymbol{X}, \boldsymbol{\Theta}) p(\boldsymbol{X} | \boldsymbol{\Theta})$, which leads to the expression given above.</p>
-{style="color: grey"}
 {{< /spoiler >}}
-
 <p align="justify">Because of the positivity of the Kullback-Leibler divergence, we see that $L(q, \boldsymbol{\Theta})$ is a lower-bound of the log-likelihood with $\log p(\boldsymbol{X} | \boldsymbol{\Theta}) \geq  L(q, \boldsymbol{\Theta})$. So, maxisiming the lower-bound $L$ should increase the log-likelihood. As a first step, we can estimate the distribution $q(\boldsymbol{Z}$ of the latent variable that maximises the lower-bound. This is easy since the log-likelihood is independant from $\boldsymbol{Z}$ and the $D_\mathrm{KL}$ is positive! So we use the current values of the parameters $\boldsymbol{\Theta}^{(t)}$ and set</p>
 
 $$
@@ -138,9 +136,7 @@ $$
 {style="color: grey"}
 
 <p align="justify">The left term in the numerator is the probability of observing $\boldsymbol{x}_i$ knowing that it belongs to the cluster $k$ and the parameters of the model. The right one is the probability of $\boldsymbol{x}_i $ being in the cluster $k$ given parameters of the model. Finally, the denominator is the probability of observing $\boldsymbol{x}_i $ given parameters of the model and independantly of any belonging to Gaussian clusters.</p>
-{style="color: grey"}
 {{< /spoiler >}}
-
 <p align="justify">This estimation of $p_{ik}$ is then used in the M-step to evaluate the maximum of the lower-bound</p>
 
 $$
