@@ -14,10 +14,6 @@ commentable: true
 profile: true
 reading_time: true
 show_related: true
-show_breadcrumb: true
-header:
-  navbar:
-    enable: false
 ---
 
 
