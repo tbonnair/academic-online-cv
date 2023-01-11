@@ -6,7 +6,6 @@ date: '2022-08-17'
 type: book
 math: true
 font_size: M
-authors: ["admin"]
 
 categories: ["Random matrix", "Theory"]
 tags: ["Medium"]
