@@ -2,7 +2,7 @@
 title: Posts
 type: page
 
-view: 5
+view: 4
 
 header:
   caption: ""
