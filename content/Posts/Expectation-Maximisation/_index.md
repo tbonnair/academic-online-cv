@@ -6,7 +6,7 @@ date: '2021-11-04'
 type: book
 math: true
 
-categories: ["Machine Learning", "Medium"]
+categories: ["Machine Learning", "Intermediate"]
 links:
   - icon: code
     name: Notebook
