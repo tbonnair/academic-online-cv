@@ -7,7 +7,7 @@ type: book
 math: true
 font_size: M
 
-categories: ["Random matrix", "Theory", "{{< icon name="signal-bars-fair" pack="fas" >}} Intermediate"]
+categories: ["Random matrix", "Theory", "Intermediate"]
 ---
 
 
