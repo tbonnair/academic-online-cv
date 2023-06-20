@@ -118,7 +118,7 @@ F_N(\beta) &= -\frac{1}{\beta} \log Z, \\\\\\
 \end{align}
 $$
 
-<p align="justify">This equation might look scary equation but let us have a look at the particular case where $\beta$ is very large (which we call the zero-temperature limit in physics). In this case, the integral is actually pretty simple because it corresponds to a summation over exponential terms scaled with a very large $\beta$. An reasonable approximation we can do is to consider that this integral is only dominated by the minimum values of the function inside the exponential because other ones will be killed exponentially fast. This approximation is called <\strong>saddle-point (or Laplace) method</\strong>. This approximation allows us to kill the integral and write</p>
+<p align="justify">This equation might look scary equation but let us have a look at the particular case where $\beta$ is very large (which we call the zero-temperature limit in physics). In this case, the integral is actually pretty simple because it corresponds to a summation over exponential terms scaling with a very large $\beta$. A reasonable approximation is to consider that this integral is only dominated by the minimum values of the function inside the exponential because all the other ones will be killed exponentially fast. This approximation is called <\strong>saddle-point (or Laplace) method</\strong> in physics and mathematics. Applying it here allows us to get rid of the integral and write</p>
 
 $$
 \begin{align}
