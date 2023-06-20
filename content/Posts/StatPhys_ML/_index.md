@@ -129,7 +129,7 @@ $$
 
 <p align="justify">which is precisely the optimisation problem associated to the supervised learning of Eq. (7)! We have hence recast the machine learning problem into a statistical physics problem with a Hamiltonian given by the loss function and that the optimisation of parameters of the network can be seen as computing the free energy of the associated system for in the zero-temperature limit. </p>
 
-{{< callout note >}} <p align="justify">It turns out that what we did here is pretty general and can be done for several optimisation problems and machine learning models that can be reformulated as physical systems. Why is that important? Because it then means that we can use some of the tools developed by statistical physicist for centuries by studying very complex problems in high-dimensions, exactly what computer scientists and mathematicians are dealing with in theoretical machine learning. One can ask questions about the mechanisms allowing convergence in neural networks, study the topology of the landscape that we optimise over, and many more that we will explore in further posts!</p> {{< /callout >}}
+{{< callout note >}} <p align="justify">It turns out that what we did here is pretty general and can be done for several optimisation problems and machine learning models that can be reformulated as physical systems. Why is that important? Because it then means that we can use some of the tools developed by statistical physicists for centuries to study very complex problems in high-dimensions, which is exactly what computer scientists and mathematicians are dealing with in theoretical machine learning. One can therefore ask questions about the mechanisms allowing convergence in neural networks, study the topology of the landscape that we optimise over, and many more that we will explore in further posts!</p> {{< /callout >}}
 
 ### Glossary
 
@@ -147,7 +147,7 @@ $$
 
 </p>
 
-## Take-home messages and conclusion
+## Take-home messages
 
 <p align="justify">Here is a short list of important things to keep in mind after reading this post:</p>
 
