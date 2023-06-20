@@ -113,7 +113,7 @@ $$
 
 $$
 \begin{align}
-F_N(\beta) &= -\frac{1}{\beta} \log Z, \\
+F_N(\beta) &= -\frac{1}{\beta} \log Z, \\\\\\
 &= -\frac{1}{\beta} \log \int \mathrm{d}\boldsymbol{\theta} \exp\left(-\beta \sum_{i=1}^M |\phi_{\theta}(\boldsymbol{x}) - y_i|^2\right).
 \end{align}
 $$
@@ -122,7 +122,7 @@ $$
 
 $$
 \begin{align}
-F_N(\beta) &\underset{\beta\to\infty}{\approx} -\frac{1}{\beta} \log \exp\left(-\beta \min_{\theta} \sum_{i=1}^M |\phi_{\theta}(\boldsymbol{x}) - y_i|^2\right), \\
+F_N(\beta) &\underset{\beta\to\infty}{\approx} -\frac{1}{\beta} \log \exp\left(-\beta \min_{\theta} \sum_{i=1}^M |\phi_{\theta}(\boldsymbol{x}) - y_i|^2\right), \\\\\\
 &\underset{\beta\to\infty}{\approx} \min_{\theta} \sum_{i=1}^M |\phi_{\theta}(\boldsymbol{x}) - y_i|^2,
 \end{align}
 $$
