@@ -5,7 +5,7 @@ summary: A glimpse of the links between statistical physics and machine learning
 date: '2021-11-04'
 type: book
 math: true
-draft: true
+draft: False
 categories: ["Statistical physics", "Machine learning", "Optimisation", "Beginner"]
 ---
 
