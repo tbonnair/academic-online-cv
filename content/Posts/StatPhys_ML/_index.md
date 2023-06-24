@@ -50,7 +50,7 @@ $$
 
 <p align="justify">for an energy of 0. Hence the low-energy state of the first example is much more <i>probable</i> to be observed than the second one at this temperature. </p>
 
-<p align="justify"> A version of this simplistic model incorporating interactions is the <strong>1D Ising model</strong>, well-known in statistical physics and in which the $+1$ or $-1$ states corresponds to the spin of the particles and with an energy function taking additionally into account the interactions between the spins on the line, such as $E(\boldsymbol{x}) = \sum_{i=1}^N J x_{i-1} x_i$. This model exhibits a lot of interesting phenomenon from statistical physics such as a <strong>phase transition</strong>, i.e. a critical value of the temperature above which all the states are aligned. </p>
+<p align="justify"> A version of this simplistic model incorporating interactions is the <strong>1D Ising model</strong>, well-known in statistical physics and in which the $+1$ or $-1$ states corresponds to the spin of the particles and with an energy function taking additionally into account the interactions between the spins on the line, such as $E(\boldsymbol{x}) = \sum_{i=1}^N J x_{i-1} x_i$. While the 1D version of the Isigin model was shown disordered at all temperature, extensions in higher dimensions (such as in 2D on the grid) were shown to exhibit a lot of interesting phenomena such as a <strong>phase transition</strong>, i.e. a critical value of the temperature below which all the states are aligned, a phase called the <strong>ordered phase</strong>, in contrast to the <strong>disordered phase</strong> in which there is no global order of spins. </p>
 
 ### The free energy and concentration phenomena
 
