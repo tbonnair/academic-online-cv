@@ -22,7 +22,7 @@ Some very nice ressources on the topics we will discuss here are available onlin
 <p align="justify"> Let us consider a system made of $N$ particles and call $x_i$ the <strong>state</strong> of the $i$th particle. The state can be understood as a property of the particle such as its position, velocity, orientation or whatever else. We can then attach to this set of particles a <strong>configuration</strong> $\boldsymbol{x} = \{x\}_{i=1}^N$ which summarises all the states of the $N$ particles. The statistical description of the microscopic physical configuration $\boldsymbol{x}$ is based on an energy function, called the Hamiltonian, written $H(\boldsymbol{x})$. The probability to find the system in a given configuration $\boldsymbol{x}$ is then given by the <strong>Boltzmann distribution</strong> </p>
 
 $$
-p(\boldsymbol{x}) = \frac{1}{Z(\beta)} \exp(-\beta H(\boldsymbol{x})),
+p(\boldsymbol{x}) = \frac{1}{Z(\beta)} \exp(-\beta H(\boldsymbol{x})), \label{eq:1}
 $$
 
 <p align="justify"> where $\beta$ is the inverse-temperature and $Z(\beta)$ is the <strong>partition function</strong> normalizing the probability distribution to one, i.e.</p>
@@ -37,7 +37,7 @@ $$
   <img src="./Diagram_statPhys.png" alt="fig:diagram_statPhys" width="800"
   </p>
 
-<p align="justify">Taking a few time to analyse the Boltzmann distribution of states in Eq. (1) already suggests that, at fixed inverse-temperature $\beta$, low energy configurations are exponentially more probable to occur because of the minus sign in the exponential. In our simple example from the figure above, we for instance have, for $\beta = 1$ and $B=1$,</p>
+<p align="justify">Taking a few time to analyse the Boltzmann distribution of states in Eq. \eqref{1} already suggests that, at fixed inverse-temperature $\beta$, low energy configurations are exponentially more probable to occur because of the minus sign in the exponential. In our simple example from the figure above, we for instance have, for $\beta = 1$ and $B=1$,</p>
 
 $$
 p\left(\boldsymbol{x} = \{-1, -1, -1, -1, +1, -1, -1, -1\} \right) = \approx 0.05,
