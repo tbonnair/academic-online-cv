@@ -81,7 +81,7 @@ $$
 $$
 <p align="justify">where the function $\ell$ is usually called the <strong>loss (or cost) function</strong> and quantifies the error we make by replacing $y_i$ by $\boldsymbol{x}$.</p>
 
-<p align="justify">The figure below provides an example of this procedure: from a set of $N$ images of dogs and cats, $\{\boldsymbol{x}_i\}_{i\in \{1,\ldots, N\}}$, together with their labels $\{y_i\}$, the data scientist builds and trains a network playing the role of the function $\phi_{\theta}(\boldsymbol{x})$. When learning, the weights $\boldsymbol{\theta}$ are optimised such that you minimise the error above, and then the data scientist applies his/her network to some new and unlabelled data for which the answer is not known yet, here the images from the set $\boldsymbol{\tilde{X}}$.</p>
+<p align="justify">The figure below provides an example of this procedure: from a set of $N$ images of dogs and cats, $\{\boldsymbol{x}_i\}_{i\in \{1,\ldots, N\}}$, together with their labels $\{y_i\}$, the data scientist builds and trains a network playing the role of the function $\phi_{\theta}(\boldsymbol{x})$. When learning, the weights $\boldsymbol{\theta}$ are optimised such that you minimise the error above, and then the data scientist applies his/her network to some new and unlabelled data for which the answer is not known yet, here the images from the set $\tilde{\boldsymbol{X}}$.</p>
 
 <p align="center">
   <img src="./Supervised_ML.png" alt="fig:supervised_ML" width="800"
