@@ -22,13 +22,13 @@ Some very nice ressources on the topics we will discuss here are available onlin
 <p align="justify"> Let us consider a system made of $N$ particles and call $x_i$ the <strong>state</strong> of the $i$th particle. The state can be understood as a property of the particle such as its position, velocity, orientation or whatever else. We can then attach to this set of particles a <strong>configuration</strong> $\boldsymbol{x} = \{x\}_{i=1}^N$ which summarises all the states of the $N$ particles. The statistical description of the microscopic physical configuration $\boldsymbol{x}$ is based on an energy function, called the Hamiltonian, written $H(\boldsymbol{x})$. The probability to find the system in a given configuration $\boldsymbol{x}$ is then given by the <strong>Boltzmann distribution</strong> </p>
 
 $$
-p(\boldsymbol{x}) = \frac{1}{Z(\beta)} \exp(-\beta H(\boldsymbol{x})), \label{eq:1}
+p(\boldsymbol{x}) = \frac{1}{Z(\beta)} \exp(-\beta H(\boldsymbol{x})), \label{eq:Boltzman}
 $$
 
 <p align="justify"> where $\beta$ is the inverse-temperature and $Z(\beta)$ is the <strong>partition function</strong> normalizing the probability distribution to one, i.e.</p>
 
 $$
-Z(\beta) = \int \mathrm{d} \boldsymbol{x} \exp(-\beta H(\boldsymbol{x})).
+Z(\beta) = \int \mathrm{d} \boldsymbol{x} \exp(-\beta H(\boldsymbol{x})). \label{eq:partition}
 $$
 
 <p align="justify"> To make these notions clearer, the diagram below sums up the several definitions introduced above on a simple example: eight particles are regularly spaced over a one-dimensional line and the state of each of them is given by either $+1$ or $-1$. There are therefore $2^8=256$ possible different configurations and three of them are represented on the diagram with their associated energy, given an energy function defined as $E(\boldsymbol{x}) = \sum_{i=1}^N B x_i$. Note however that this very simple example is exempt from interactions between the particles, hence no interesting macroscopic behaviour can emerge and it only serves an illustrative purpose without much interest scientifically.</p>
@@ -36,17 +36,16 @@ $$
   <p align="center">
   <img src="./Diagram_statPhys.png" alt="fig:diagram_statPhys" width="800"
   </p>
-
-<p align="justify">Taking a few time to analyse the Boltzmann distribution of states in Eq. \eqref{1} already suggests that, at fixed inverse-temperature $\beta$, low energy configurations are exponentially more probable to occur because of the minus sign in the exponential. In our simple example from the figure above, we for instance have, for $\beta = 1$ and $B=1$,</p>
+<p align="justify">Taking a few time to analyse the Boltzmann distribution of states in Eq. \eqref{eq:Boltzman} already suggests that, at fixed inverse-temperature $\beta$, low energy configurations are exponentially more probable to occur because of the minus sign in the exponential. In our simple example from the figure above, we for instance have, for $\beta = 1$ and $B=1$,</p>
 
 $$
-p\left(\boldsymbol{x} = \{-1, -1, -1, -1, +1, -1, -1, -1\} \right) = \approx 0.05,
+p\left(\boldsymbol{x} = {\{-1, -1, -1, -1, +1, -1, -1, -1\}} \right) = \approx 0.05,
 $$
 
 <p align="justify">corresponding to an energy $H(\boldsymbol{x}) = -6$ while</p>
 
 $$
-p\left(\boldsymbol{x} = \{+1, +1, +1, -1, +1, -1, -1, -1\} \right) \approx 10^{-4},
+p\left(\boldsymbol{x} = {\{+1, +1, +1, -1, +1, -1, -1, -1\}} \right) \approx 10^{-4},
 $$
 
 <p align="justify">for an energy of 0. Hence the low-energy state of the first example is much more <i>probable</i> to be observed than the second one at this temperature. </p>
@@ -78,7 +77,7 @@ So, basically, all we need to do when we analyse systems with large $N$ is to co
 <p align="justify">Without transition, let us move to machine learning, and more precisely <strong>supervised learning</strong> in one seeks to learn a statistical model that predicts a - let's say scalar to keep it simple - quantity called a label based on $M$ example vectors $\{\boldsymbol{x}_i\}_{i=1}^M$. These vectors can for instance be images of cats and dogs in which case the associated labels $y_i$ associated to each image $\boldsymbol{x}_i$ is either "cat" or "dog". The central question in supervised machine learning is then <i>Can we learn a function that predicts $y_i$ based on $\boldsymbol{x}_i$?</i> Ultimately, data scientists want to apply this model to data for which they do not know the label which is something called <strong>generalisation</strong> (new images of cats and dogs that the network never saw before). In our image classification example, we thus aim at finding a function $\phi_\theta(\boldsymbol{x}_i)$ parametrised by some values $\theta$ that can predict an estimate of $y_i$. Most of supervised machine learning problems therefore come formulated mathematically as</p>
 
 $$
-\underset{{\boldsymbol{\theta} \in \Theta}}{\operatorname{min}} \sum_{i=1}^M \ell( \phi_{\theta}(\boldsymbol{x}_i), y_i)),
+\underset{{\boldsymbol{\theta} \in \Theta}}{\operatorname{min}} \sum_{i=1}^M \ell( \phi_{\theta}(\boldsymbol{x}_i), y_i)), \label{eq:loss_function}
 $$
 <p align="justify">where the function $\ell$ is usually called the <strong>loss (or cost) function</strong> and quantifies the error we make by replacing $y_i$ by $\boldsymbol{x}$.</p>
 
@@ -89,16 +88,16 @@ $$
 </p>
 
 
-<p align="justify">Let's take a moment to analyse the barbarian notations of the previous equation (7). Consider for instance a typical squared $L_2$ norm as a loss function, using the squared distance between the estimated label $\phi_\theta(\boldsymbol{x}_i)$ and the true one $y_i$ as a measure of the error,</p>
+<p align="justify">Let's take a moment to analyse the barbarian notations of the previous equation \eqref{eq:loss_function}. Consider for instance a typical squared $L_2$ norm as a loss function, using the squared distance between the estimated label $\phi_\theta(\boldsymbol{x}_i)$ and the true one $y_i$ as a measure of the error,</p>
 
 $$
 \ell( \phi_{\theta}(\boldsymbol{x}_i), y_i)) = \left|\phi_\theta(\boldsymbol{x}_i) - y_i \right|^2.
 $$
-<p align="justify">In this case, Eq. (7) simply means that we are trying to identify the set of parameters $\theta$ that minimizes the sum over all examples of our loss function. Taking back our image classification problem again, the value of the loss would be zero if we correctly classify all the images. Concerning the parameters, if $\phi_\theta$ represents a neural networks, then $\theta$ refers to all the weights and bias that parametrise the network. When the estimated label $\phi_{\theta}(\boldsymbol{x}_i)$ is far away from the true one $y_i$, then the loss function is large meaning our model is not a good one while, if the two are equal, then the loss cancels out, meaning our model $\phi_\theta$ has learnt how to predict these labels perfectly.</p>
+<p align="justify">In this case, Eq. \eqref{eq:loss_function} simply means that we are trying to identify the set of parameters $\theta$ that minimizes the sum over all examples of our loss function. Taking back our image classification problem again, the value of the loss would be zero if we correctly classify all the images. Concerning the parameters, if $\phi_\theta$ represents a neural networks, then $\theta$ refers to all the weights and bias that parametrise the network. When the estimated label $\phi_{\theta}(\boldsymbol{x}_i)$ is far away from the true one $y_i$, then the loss function is large meaning our model is not a good one while, if the two are equal, then the loss cancels out, meaning our model $\phi_\theta$ has learnt how to predict these labels perfectly.</p>
 
 ## A bridge between statistical physics and machine learning
 
-<p align="justify">It turns out that the optimisation problem we define in the context of machine learning in Eq. (7) can be exactly seen as the minimisation of an energy function in statistical physics. In this analogy, the weights of our neural network are playing the role of the many particles in statistical physics and a state now corresponds to an ensemble value of these weights $\{\theta_1, \ldots, \theta_N\}$. Now we can consider the Boltzmann distribution associated to these weights that we would write </p>
+<p align="justify">It turns out that the optimisation problem we define in the context of machine learning in Eq. \eqref{eq:loss_function} can be exactly seen as the minimisation of an energy function in statistical physics. In this analogy, the weights of our neural network are playing the role of the many particles in statistical physics and a state now corresponds to an ensemble value of these weights $\{\theta_1, \ldots, \theta_N\}$. Now we can consider the Boltzmann distribution associated to these weights that we would write </p>
 
 $$
 p(\theta_1, \theta_2, \cdots, \theta_N) = \frac{1}{Z} \exp\left(-\beta H(\theta_1, \theta_2, \ldots, \theta_N) \right).
@@ -128,7 +127,7 @@ F_N(\beta) &\underset{\beta\to\infty}{\approx} -\frac{1}{\beta} \log \exp\left(-
 \end{align}
 $$
 
-<p align="justify">which is precisely the optimisation problem associated to the supervised learning of Eq. (7)! We have hence recast the machine learning problem into a statistical physics problem with a Hamiltonian given by the loss function and that the optimisation of parameters of the network can be seen as computing the free energy of the associated system for in the zero-temperature limit. </p>
+<p align="justify">which is precisely the optimisation problem associated to the supervised learning of Eq. \eqref{eq:loss_function}! We have hence recast the machine learning problem into a statistical physics problem with a Hamiltonian given by the loss function and that the optimisation of parameters of the network can be seen as computing the free energy of the associated system for in the zero-temperature limit. </p>
 
 {{< callout note >}} <p align="justify">It turns out that what we did here is pretty general and can be done for several optimisation problems and machine learning models that can be reformulated as physical systems. Why is that important? Because it then means that we can use some of the tools developed by statistical physicists for centuries to study very complex problems in high-dimensions, which is exactly what computer scientists and mathematicians are dealing with in theoretical machine learning. One can therefore ask questions about the mechanisms allowing convergence in neural networks, study the topology of the landscape that we optimise over, and many more that we will explore in further posts!</p> {{< /callout >}}
 
