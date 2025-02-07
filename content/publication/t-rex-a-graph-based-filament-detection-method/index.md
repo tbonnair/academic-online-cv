@@ -23,7 +23,7 @@ authors:
   - Marian Douspis
 publication: In Astronomy and Astrophysics
 publication_short: ""
-featured: true
+featured: false
 image:
   preview_only: false
 summary: <p align="justify">How to extract filaments based on a sparse and discrete spatial
