@@ -1,10 +1,10 @@
 ---
-role: Postdoctoral researcher
+role: AI Fellow Researcher
 bio: ""
 interests:
-  - Interfaces physics/machine learning
-  - Algorithmics & Machine Learning
-  - "Cosmology: Large-scale structures of the Universe"
+  - Machine Learning
+  - Statistical physics
+  - Astrophysics and Cosmology
 social:
   - icon: envelope
     icon_pack: fas
@@ -40,4 +40,4 @@ title: Tony Bonnaire
 email: ""
 ---
 <p align="justify">I graduated from the french engineering school CentraleSupélec with a major background in applied mathematics and algorithmic. After a year of working as a research engineer in Thales, I decided to begin a Ph.D. program in Université Paris Saclay, at the Institut d'Astrophysique Spatiale, under the supervision of Nabila Aghanim (IAS) and Aurélien Decelle (UCM, LRI). <br>
-I am currently a postdoctoral researcher at the École Normale Supérieure (ENS) in Paris working on the interfaces between statistical physics and machine learning algorithms in Giulio Biroli's team at the center for data sciences.</p>
+I am currently an AI Fellow at PSL University in the physics department and Center for Data Sciences of École Normale Supérieure (ENS) in Paris. I am working on the interfaces between statistical physics and theoretical machine learning, but also applications ML methods to physics problems, mainly in cosmology for the study of large-scale matter distribution.</p>
