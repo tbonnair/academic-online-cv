@@ -1,11 +1,11 @@
 ---
 widget: pages
 headless: true
-weight: 110
-title: Recent & Upcoming Talks
+weight: 120
+title: Recent posts
 subtitle: null
 content:
-  page_type: post
+  page_type: posts
   count: 3
   filters:
     author: ""
