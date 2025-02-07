@@ -1,16 +1,16 @@
 ---
-abstract: "Amongst the recent breakthroughs of machine learning these past years is the field of generative models, able to create always more realistic samples from various finite datasets of images, videos, or sounds. At the forefront of this revolution are Diffusion Models (DMs) exploiting the gradient of the log-probability distribution to generate new samples. However, the reasons for their success still lack a theoretical understanding. In this talk, I will give a brief introduction to diffusion models and then delve into the analysis of a well-defined high-dimensional model: a mixture of two Gaussians. Using methods from statistical physics, we will exhibit the various transitions taking place during the generation dynamics. In particular, we first identify a 'speciation' transition where the generated sample acquire its structure, later followed by a second transition, called 'collapse', where the trajectories become attracted to one of the training point. These theoretical findings, which we establish in the high-dimensional limit of the Gaussian mixture model, will then be generalised and validated by experiments on realistic datasets."
+abstract: "The spatial distribution of matter at late time in the Universe depicts a complex pattern commonly referred to as the cosmic web. In this web-like structure, massive nodes are linked together by elongated bridges of matter, the filaments, themselves found at the intersections of mildly-dense walls forming the borders of vast and underdense volumes called voids. In this presentation, I will start by giving a broad introduction to the cosmic web together with some motivations for extracting compressed summaries from matter fields. I will then focus on the definition and exploitation of the several cosmic web environments to improve the constraints on the cosmological parameters over the traditionally-used two-point statistics in large N-body simulations from the Quijote suite. If time permits, I will also take a few minutes to discuss another part of my recent research activity aimed at using developments from theoretical physics to better understand the learning procedure of some neural networks."
 slides: ""
 url_pdf: ""
 summary: ""
-date_end: 2024-05-24T18:00:00.000Z
+date_end: 2024-02-27T18:00:00.000Z
 event_url: https://www.lpens.ens.psl.eu/astrophysique/
 authors: []
 url_video: ""
-date: 2024-05-24T17:00:00.000Z
-featured: false
+date: 2024-05-27T17:00:00.000Z
+featured: true
 url_slides: ""
-title: "Dynamical Regimes of Diffusion Models"
+title: "The cosmological information of the cosmic web"
 location: Ecole Normale Supérieure, ENS, Paris
 links: []
 event: Seminar
