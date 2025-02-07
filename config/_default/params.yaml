@@ -46,6 +46,7 @@ main_menu:
   show_day_night: true
   show_search: true
   highlight_active_link: true
+  fixed_to_top: true
 
 # Localization
 
