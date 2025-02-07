@@ -9,7 +9,7 @@ authors: []
 url_video: ""
 date: 2024-05-27T17:00:00.000Z
 featured: true
-url_slides: ""
+url_slides: "https://github.com/tbonnair/academic-online-cv/tree/master/content/slides/Scattering_club_cosmo.pdf"
 title: "The cosmological information of the cosmic web"
 location: Ecole Normale Supérieure, ENS, Paris
 links: []
