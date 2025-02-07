@@ -9,7 +9,7 @@ authors: []
 url_video: ""
 date: 2024-10-17T8:00:00.000Z
 featured: true
-url_slides: "https://github.com/tbonnair/academic-online-cv/tree/master/content/slides/Diffusion_models_LANL.pdf"
+url_slides: uploads/slides/Diffusion_models_LANL.pdf
 title: "The Generative Dynamics of Diffusion Models in Large Dimensions"
 location: LANL, Los Alamos, USA.
 links: []

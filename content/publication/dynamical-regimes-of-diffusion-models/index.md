@@ -5,6 +5,10 @@ url_pdf: https://arxiv.org/abs/2402.18491
 title: Dynamical Regimes of Diffusion Models
 publication_types:
   - "2"
+links:
+  - icon: code
+    name: Code
+    url: 'https://github.com/tbonnair/Dynamical-Regimes-of-Diffusion-Models'
 authors:
   - Giulio Biroli
   - admin
