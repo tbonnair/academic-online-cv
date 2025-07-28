@@ -1,5 +1,5 @@
 ---
-abstract: <p align="justify">Test</p>
+abstract: <p align="justify">Gradient descent is commonly used to find minima in rough landscapes, particularly in recent machine learning applications.</p>
 draft: false
 url_pdf: https://arxiv.org/abs/2403.02418
 title: "The Role of the Time-Dependent Hessian in High-Dimensional Optimization"
