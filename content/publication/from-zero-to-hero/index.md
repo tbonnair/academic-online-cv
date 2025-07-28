@@ -2,7 +2,7 @@
 abstract: <p align="justify">Test</p>
 draft: false
 url_pdf: https://arxiv.org/abs/2403.02418
-title: "Test"
+title: "The Role of the Time-Dependent Hessian in High-Dimensional Optimization"
 publication_types:
   - "2"
 authors:
