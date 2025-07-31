@@ -1,5 +1,5 @@
 ---
-abstract: <p align="justify">Gradient descent is commonly used to find minima in rough landscapes, particularly in recent machine learning applications.</p>
+abstract: <p align="justify">Gradient descent is commonly used to find minima in rough landscapes, particularly in recent machine learning applications. However, a theoretical understadin of why good solutions are found remains elusive, expecially in strongly non-convex and high-dimensional settings. Here, we focus on the phrase retrieval problem as a typical example. </p>
 draft: false
 url_pdf: https://arxiv.org/abs/2403.02418
 title: "The Role of the Time-Dependent Hessian in High-Dimensional Optimization"
