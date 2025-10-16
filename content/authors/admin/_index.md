@@ -25,8 +25,8 @@ social:
     icon_pack: fab
     link: https://www.linkedin.com/in/tbonnair
 organizations:
-  - name: École Normale Supérieure de Paris
-    url: https://csd.ens.psl.eu
+  - name: Institut d'Astrophysique Spatiale (Université Paris-Saclay)
+    url: https://www.ias.u-psud.fr
 education:
   courses:
     - course: Ph.D. in Astrophysics & Cosmology
