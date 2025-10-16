@@ -1,8 +1,9 @@
 ---
-role: AI Fellow Researcher
+role: CNRS AI Research Scientist
 bio: ""
 interests:
-  - Machine Learning
+  - Generative Models
+  - High-dimensional landscapes
   - Statistical physics
   - Astrophysics and Cosmology
 social:
@@ -39,5 +40,5 @@ highlight_name: true
 title: Tony Bonnaire
 email: ""
 ---
-<p align="justify">I graduated from the french engineering school CentraleSupélec with a major background in applied mathematics and algorithmic. After a year of working as a research engineer in Thales, I decided to begin a Ph.D. program in Université Paris Saclay, at the Institut d'Astrophysique Spatiale, under the supervision of Nabila Aghanim (IAS) and Aurélien Decelle (UCM, LRI). <br>
-I am currently an AI Fellow at PSL University in the physics department and Center for Data Sciences of École Normale Supérieure (ENS) in Paris. I am working on the interfaces between statistical physics and theoretical machine learning, but also applications ML methods to physics problems, mainly in cosmology for the study of large-scale matter distribution.</p>
+<p align="justify">I am an interdisciplinary AI researcher hosted at Institut d'Astrophysique Spatiale (Orsay, Université Paris-Saclay) bridging physics and AI. I use and adapt tools from theoretical physics to analyse, understand and improve generalization in machine learning models. I also conceive, implement and train AI-based models to solve challenging problems in physics, especially in cosmology and disordered systems. </br> 
+Currently? I’m focusing on the theory side on how generalization emerges in diffusion-based models, and in practice on transforming them into powerful tools to study complex and high-dimensional physical systems. Feel free to contact me if you’d like to discuss AI theory, in particular generative models, or their applications in science and beyond. </p>
