@@ -22,6 +22,15 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: CNRS AI Research Scientist
+    company: IAS, Université Paris-Saclay
+    company_url: ''
+    company_logo: ''
+    location: Orsay, France
+    date_start: '2025-10-01'
+    date_end: ''
+    description: '<p align="justify">AI and physics: theory and applications.</p>'
+
   - title: AI Fellow researcher
     company: ENS, Université PSL
     company_url: ''
