@@ -37,7 +37,7 @@ experience:
     company_logo: ''
     location: Paris, France
     date_start: '2022-01-04'
-    date_end: ''
+    date_end: '2025-09-30'
     description: '<p align="justify">AI for physics and physics for AI: development of AI-based tools for astrophysics and cosmology and exploration of the links between theoretical physics and AI for a better understanding of AI systems. Teaching duty under the data science program of PSL University.</p>'
 
   - title: Postdoctoral researcher
