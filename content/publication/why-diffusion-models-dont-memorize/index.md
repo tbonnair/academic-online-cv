@@ -5,6 +5,10 @@ url_pdf: https://arxiv.org/abs/2505.17638
 title: "Why Diffusion Models Don't Memorize: The Role of Implicit Dynamical Regularization in Training"
 publication_types:
   - "2"
+links:
+  - icon: code
+    name: Code
+    url: 'https://github.com/tbonnair/Why-Diffusion-Models-Don-t-Memorize'
 authors:
   - admin
   - Raphaël Urfin
