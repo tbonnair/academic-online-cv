@@ -1,0 +1,459 @@
+/* =========================================================================
+   Custom theme overrides — minimalist editorial rework
+   Imported last by main.scss, so these rules win without heavy !important.
+   Palette is driven by CSS custom properties for easy tweaking.
+   ========================================================================= */
+
+:root {
+  --ink: #1f2630;          /* primary text */
+  --muted: #64748b;        /* secondary text (slate-500) */
+  --faint: #94a3b8;        /* tertiary / meta (slate-400) */
+  --accent: #334155;       /* links / accents (slate-700) */
+  --accent-strong: #0f172a;/* hover (slate-900) */
+  --hairline: #e9eaee;     /* dividers / borders */
+  --surface: #ffffff;
+  --surface-2: #fafafb;    /* very subtle raised surface */
+}
+
+body.dark {
+  --ink: #e8eaed;
+  --muted: #9aa4b2;
+  --faint: #6b7686;
+  --accent: #cbd5e1;
+  --accent-strong: #f1f5f9;
+  --hairline: rgba(255, 255, 255, 0.09);
+  --surface: #14161d;
+  --surface-2: #181b23;
+}
+
+/* ---- Base typography ---------------------------------------------------- */
+
+body {
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.003em;
+}
+
+p, li {
+  line-height: 1.72;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: -0.018em;
+  color: var(--ink);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+a:hover {
+  color: var(--accent-strong);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+/* ---- One continuous surface: remove alternating section bands ----------- */
+
+.home-section-bg {
+  background: transparent !important;
+}
+/* Override the theme's alternating odd/even banding so all sections share
+   one surface (the :nth-of-type(even) rule has higher specificity). */
+.home-section,
+.home-section:nth-of-type(even) {
+  background: var(--surface);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+/* Hairline divider between consecutive sections instead of colour blocks */
+.home-section + .home-section {
+  border-top: 1px solid var(--hairline);
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
+  }
+}
+
+/* ---- Section headings as quiet "eyebrow" labels ------------------------- */
+/* The left column title of each section (Experience, Publications, …) */
+
+.section-heading h1 {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+.section-heading p,
+.section-subheading {
+  color: var(--faint);
+}
+
+/* ---- Navbar: thin, hairline, restrained --------------------------------- */
+
+.navbar-light.navbar-main {
+  background: color-mix(in srgb, var(--surface) 82%, transparent) !important;
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--hairline);
+  box-shadow: none !important;
+  min-height: 3.25rem;
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink) !important;
+}
+.navbar-light.navbar-main .navbar-nav .nav-link {
+  color: var(--muted) !important;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+  transition: color 0.15s ease;
+}
+.navbar-light.navbar-main .navbar-nav .nav-link:hover,
+.navbar-light.navbar-main .navbar-nav .active > .nav-link,
+.navbar-light.navbar-main .navbar-nav .nav-link.active {
+  color: var(--ink) !important;
+}
+
+/* ---- Hero / biography --------------------------------------------------- */
+
+/* Avatar: refined ring instead of heavy drop shadow */
+.avatar.avatar-circle {
+  box-shadow: 0 0 0 1px var(--hairline);
+  border: 4px solid var(--surface);
+}
+
+/* Name */
+.portrait-title h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.35rem;
+}
+/* Role / affiliation lines */
+.portrait-title h3 {
+  font-size: 0.98rem;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0;
+  line-height: 1.45;
+}
+
+/* Social icons: smaller, slate, quiet hover */
+.network-icon {
+  margin-top: 1rem;
+}
+.network-icon a {
+  color: var(--muted);
+}
+.network-icon a:hover {
+  color: var(--accent-strong);
+}
+.network-icon .big-icon {
+  font-size: 1.15rem;
+}
+
+/* Redundant "About me" heading above the bio — hide for a cleaner intro */
+.wg-about .col-12.col-lg-8 > h1:first-child {
+  display: none;
+}
+
+/* Bio reading measure + tone */
+.wg-about .article-style {
+  max-width: 44rem;
+  color: var(--ink);
+}
+.wg-about .article-style p {
+  font-size: 1.05rem;
+}
+
+/* Interests / Education subheadings as eyebrow labels */
+.section-subheading {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+.ul-interests li,
+.ul-edu .course {
+  color: var(--ink);
+}
+.ul-edu .institution {
+  color: var(--faint);
+}
+
+/* ---- Publications & listings: strip card chrome ------------------------- */
+
+.media.stream-item,
+.article-style .media {
+  border: none;
+}
+.stream-item {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.stream-item:last-child {
+  border-bottom: none;
+}
+.article-metadata,
+.article-style .summary {
+  color: var(--muted);
+}
+
+/* Callout boxes (e.g. "Discover all publications") — lighter */
+.alert,
+.callout {
+  background: var(--surface-2);
+  border: 1px solid var(--hairline);
+  border-radius: 8px;
+}
+
+/* ---- Experience timeline ------------------------------------------------ */
+
+.experience .card,
+.experience .media {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+/* ---- Buttons ------------------------------------------------------------ */
+
+.btn-outline-primary {
+  border-color: var(--hairline);
+  color: var(--accent);
+}
+.btn-outline-primary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ---- Footer ------------------------------------------------------------- */
+
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--hairline);
+  color: var(--faint);
+  font-size: 0.85rem;
+}
+.site-footer a {
+  color: var(--muted);
+}
+
+/* ---- News / Updates feed ------------------------------------------------ */
+
+.news-feed {
+  max-width: 44rem;
+}
+.news-item {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.news-item:last-of-type {
+  border-bottom: none;
+}
+.news-date {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+  text-transform: uppercase;
+  padding-top: 0.12rem;
+  font-variant-numeric: tabular-nums;
+}
+.news-body {
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+@media (max-width: 575px) {
+  .news-item {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
+/* ---- Link pills: PDF / arXiv / Code / Cite buttons --------------------- */
+
+.btn-links .btn,
+.btn.btn-page-header {
+  border-radius: 999px;
+  border: 1px solid var(--hairline);
+  background: transparent;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 0.28rem 0.85rem;
+  box-shadow: none;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.btn-links .btn:hover,
+.btn.btn-page-header:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.btn-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+body.dark .btn-links .btn,
+body.dark .btn.btn-page-header {
+  color: var(--accent);
+}
+body.dark .btn-links .btn:hover,
+body.dark .btn.btn-page-header:hover {
+  background: var(--accent);
+  color: var(--surface);
+}
+
+/* ---- Hero refinements: larger focal name + interests as pills ---------- */
+
+.portrait-title h2 {
+  font-size: 1.95rem;
+}
+
+.ul-interests {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.2rem;
+}
+.ul-interests li {
+  font-size: 0.82rem;
+  line-height: 1.2;
+  padding: 0.28rem 0.72rem;
+  border: 1px solid var(--hairline);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--surface-2);
+}
+
+/* ---- Selected publications: clean rows + teaser figures ---------------- */
+
+.wg-featured .media.stream-item {
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+  padding: 1.35rem 0;
+}
+.wg-featured .stream-item .media-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.wg-featured .stream-item .ml-3 {
+  margin-left: 0 !important;
+  flex: 0 0 auto;
+}
+.wg-featured .stream-item .ml-3 img {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--hairline);
+  display: block;
+}
+.wg-featured .article-title a {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.wg-featured .summary-link .article-style {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.pub-publication {
+  font-weight: 500;
+  color: var(--ink);
+}
+
+/* "See all publications" link */
+.see-all {
+  margin-top: 1.6rem;
+}
+.see-all a {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--accent);
+}
+.see-all a:hover {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+.see-all a i {
+  transition: transform 0.15s ease;
+}
+.see-all a:hover i {
+  transform: translateX(3px);
+}
+
+@media (max-width: 575px) {
+  .wg-featured .media.stream-item {
+    flex-direction: column-reverse;
+    gap: 0.9rem;
+  }
+  .wg-featured .stream-item .ml-3 img {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* ---- Contact: minimal email + social ----------------------------------- */
+
+.contact-simple p {
+  max-width: 40rem;
+  color: var(--ink);
+}
+.contact-email {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.contact-email .email-sep {
+  color: var(--faint);
+  font-weight: 400;
+  font-size: 0.85em;
+  margin: 0 0.15em;
+}
+.contact-social {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 1.3rem;
+}
+.contact-social a {
+  color: var(--muted);
+  font-size: 1.3rem;
+  transition: color 0.15s ease;
+}
+.contact-social a:hover {
+  color: var(--accent-strong);
+}
+
+/* ---- Dark-mode surface fixes ------------------------------------------- */
+
+body.dark,
+body.dark .home-section,
+body.dark .site-footer {
+  background: var(--surface);
+}

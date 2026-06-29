@@ -1,0 +1,26 @@
+# Custom theme: muted near-black / slate accent.
+# Minimalist palette — color stays out of the way; links read as dark slate.
+
+# Theme metadata
+name = "Slate"
+
+# Is theme light or dark?
+light = true
+
+# Primary (links, buttons, highlighted name, active accents)
+primary = "#334155"  # slate-700
+
+# Menu
+menu_primary = "#ffffff"
+menu_text = "#334155"        # slate-700
+menu_text_active = "#0f172a" # slate-900 (near-black)
+menu_title = "#0f172a"
+
+# Home sections (alternating backgrounds — kept very subtle)
+home_section_odd = "rgb(255, 255, 255)"
+home_section_even = "rgb(248, 249, 250)"
+
+# Dark-mode variant (used when the visitor's OS prefers dark, or via the toggle)
+[dark]
+  link = "#cbd5e1"        # slate-300
+  link_hover = "#f1f5f9"  # slate-100

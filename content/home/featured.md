@@ -25,6 +25,11 @@ content:
     tag: ""
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
+  # Link to the full, filterable publication list.
+  archive:
+    enable: true
+    link: publication/
+    text: See all publications
 
 design:
   # Choose a view for the listings:
@@ -34,7 +39,3 @@ design:
   #   4 = Citation (publication only)
   view: 2
 ---
-
-{{% callout note %}}
-Discover and filter [all publications](./publication/).
-{{% /callout %}}

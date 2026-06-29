@@ -1,0 +1,14 @@
+# Custom font set: Inter everywhere (body + headings + nav).
+# Crisp, neutral, modern — the de-facto choice for clean research sites.
+
+# Font style metadata
+name = "Inter"
+
+# Google font URL
+google_fonts = "family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap"
+
+# Font families
+heading_font = "Inter"
+body_font = "Inter"
+nav_font = "Inter"
+mono_font = "JetBrains Mono"

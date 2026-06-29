@@ -14,8 +14,8 @@ authors:
   - Raphaël Urfin
   - Giulio Biroli
   - Marc Mézard
-publication: arXiv:2505.17638
-publication_short: ""
+publication: "NeurIPS 2025 — Best Paper Award"
+publication_short: "NeurIPS 2025"
 featured: true
 image:
   filename: featured.png
